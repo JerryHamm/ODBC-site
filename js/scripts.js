@@ -12,16 +12,28 @@ window.addEventListener('DOMContentLoaded', event => {
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
+
+        if (!navbarCollapsible && navbarDropdownItemColourChange) {
             return;
         }
         if (window.scrollY === 0) {
             navbarCollapsible.classList.remove('navbar-shrink')
+            document.getElementById("nav-dropdown-item-1").style.color = "#6c757d";
+            document.getElementById("nav-dropdown-item-2").style.color = "#6c757d";
+            document.getElementById("nav-dropdown-item-3").style.color = "#6c757d";
+            document.getElementById("nav-dropdown-item-4").style.color = "#6c757d";
+            document.getElementById("nav-dropdown-item-5").style.color = "#6c757d";
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
+            document.getElementById("nav-dropdown-item-1").style.color = "#000";
+            document.getElementById("nav-dropdown-item-2").style.color = "#000";
+            document.getElementById("nav-dropdown-item-3").style.color = "#000";
+            document.getElementById("nav-dropdown-item-4").style.color = "#000";
+            document.getElementById("nav-dropdown-item-5").style.color = "#000";
         }
 
     };
+
 
     // Shrink the navbar 
     navbarShrink();
