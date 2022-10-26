@@ -81,6 +81,37 @@
 .homepage-logo {
   max-width: 100%;
 }
+
+.card {
+  box-shadow: 0 4px 8px 0 #dc58348e;
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 #dc5834a1;
+}
+
+/* Add some padding inside the card container */
+.card-container {
+  padding: 2px 16px;
+  background-color:  #dc5834;
+  color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+.card-img {
+  border-radius: 5px 5px 0 0;
+}
+
+
+/* styling card text */
+.card-container > p{
+  font-size: 100%;
+}
 /* CUSTOM STYLING END */
 
 body {
@@ -1374,7 +1405,7 @@ progress {
 
   .col-lg-3 {
     flex: 0 0 auto;
-    width: 25%;
+    width: 20%;
   }
 
   .col-lg-4 {
@@ -4526,7 +4557,7 @@ textarea.form-control-lg {
   color: #fff;
 }
 
-.card {
+/* .card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -4681,7 +4712,7 @@ textarea.form-control-lg {
 .card-group > .card:not(:first-child) .card-footer {
     border-bottom-left-radius: 0;
   }
-}
+} */
 
 .accordion-button {
   position: relative;
