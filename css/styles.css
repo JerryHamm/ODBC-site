@@ -95,7 +95,7 @@
 
 /* Add some padding inside the card container */
 .card-container {
-  padding: 2px 16px;
+  /* padding: 2px 16px; */
   background-color:  #dc5834;
   color: #fff;
   border-bottom-left-radius: 5px;
@@ -110,7 +110,7 @@
 
 /* styling card text */
 .card-container > p{
-  font-size: 100%;
+  font-size: 1.2vw;
 }
 /* CUSTOM STYLING END */
 
@@ -773,6 +773,11 @@ progress {
   width: 25%;
 }
 
+.card-col {
+  flex: 0 0 auto;
+  max-width: 20%;
+}
+
 .col-4 {
   flex: 0 0 auto;
   width: 33.33333333%;
@@ -980,6 +985,11 @@ progress {
   .col-sm-3 {
     flex: 0 0 auto;
     width: 25%;
+  }
+
+  .card-col {
+    flex: 0 0 auto;
+    max-width: 20%;
   }
 
   .col-sm-4 {
@@ -1195,6 +1205,11 @@ progress {
     width: 25%;
   }
 
+  .card-col {
+    flex: 0 0 auto;
+    max-width: 20%;
+  }
+
   .col-md-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
@@ -1405,7 +1420,12 @@ progress {
 
   .col-lg-3 {
     flex: 0 0 auto;
-    width: 20%;
+    max-width: 25%;
+  }
+
+  .card-col {
+    flex: 0 0 auto;
+    max-width: 20%;
   }
 
   .col-lg-4 {
@@ -1626,6 +1646,11 @@ progress {
     width: 25%;
   }
 
+  .card-col {
+    flex: 0 0 auto;
+    max-width: 20%;
+  }
+
   .col-xl-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
@@ -1837,6 +1862,11 @@ progress {
   .col-xxl-3 {
     flex: 0 0 auto;
     width: 25%;
+  }
+
+  .card-col {
+    flex: 0 0 auto;
+    max-width: 20%;
   }
 
   .col-xxl-4 {
