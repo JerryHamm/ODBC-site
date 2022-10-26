@@ -95,7 +95,7 @@
 
 /* Add some padding inside the card container */
 .card-container {
-  /* padding: 2px 16px; */
+  padding: 2px 16px;
   background-color:  #dc5834;
   color: #fff;
   border-bottom-left-radius: 5px;
