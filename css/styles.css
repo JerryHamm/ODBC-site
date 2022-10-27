@@ -113,9 +113,19 @@
 }
 
 /* ministries info box */
-.ministries-info{
+.ministry-info {
   border: 2px solid #dc5834;
-  border-radius: 10px;
+  border-radius: 20px;
+}
+
+/* ministries info box */
+.ministry-pic {
+  
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
 }
 /* CUSTOM STYLING END */
 
@@ -1215,6 +1225,16 @@ progress {
     max-width: 20%;
   }
 
+  .ministry-info-col {
+    flex: 0 0 auto;
+    width: 40%;
+  }
+
+  .ministry-pic-col {
+    flex: 0 0 auto;
+    width: 60%;
+  }
+
   .col-md-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
@@ -1431,6 +1451,16 @@ progress {
   .card-col {
     flex: 0 0 auto;
     max-width: 20%;
+  }
+
+  .ministry-info-col {
+    flex: 0 0 auto;
+    width: 40%;
+  }
+
+  .ministry-pic-col {
+    flex: 0 0 auto;
+    width: 60%;
   }
 
   .col-lg-4 {
@@ -1656,6 +1686,16 @@ progress {
     max-width: 20%;
   }
 
+  .ministry-info-col {
+    flex: 0 0 auto;
+    width: 40%;
+  }
+
+  .ministry-pic-col {
+    flex: 0 0 auto;
+    width: 60%;
+  }
+
   .col-xl-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
@@ -1872,6 +1912,16 @@ progress {
   .card-col {
     flex: 0 0 auto;
     max-width: 20%;
+  }
+
+  .ministry-info-col {
+    flex: 0 0 auto;
+    width: 40%;
+  }
+
+  .ministry-pic-col {
+    flex: 0 0 auto;
+    width: 60%;
   }
 
   .col-xxl-4 {
