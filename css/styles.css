@@ -107,10 +107,15 @@
   border-radius: 5px 5px 0 0;
 }
 
-
 /* styling card text */
 .card-container > p{
   font-size: 1.2vw;
+}
+
+/* ministries info box */
+.ministries-info{
+  border: 2px solid #dc5834;
+  border-radius: 10px;
 }
 /* CUSTOM STYLING END */
 
