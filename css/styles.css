@@ -112,20 +112,29 @@
   font-size: 1.2vw;
 }
 
-/* ministries info box */
-.ministry-info {
-  border: 2px solid #dc5834;
-  border-radius: 20px;
+/* ministries styling */
+.ministries-container {
+  position: relative;
+  text-align: center;
 }
 
-/* ministries info box */
-.ministry-pic {
-  
+.ministries-inner-container {
+  background-color: #000;
 }
 
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
+.ministries-info {
+  position: absolute;
+  color: #fff;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ministries-btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* CUSTOM STYLING END */
 
@@ -647,6 +656,8 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  padding: 5px;
+  border-radius: 20px;
 }
 
 .img-thumbnail {
@@ -11577,6 +11588,9 @@ header.masthead h1, header.masthead .h1 {
   background: rgba(244, 98, 58, 0.9);
   transition: opacity 0.25s ease;
   text-align: center;
+  padding: 5px;
+  border-radius: 20px;
+
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
