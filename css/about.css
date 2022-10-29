@@ -1,0 +1,10 @@
+.bg-about {
+    background-image: 
+      linear-gradient(
+        /* rgba(255, 0, 0, 0.45), 
+        rgba(255, 0, 0, 0.45) */
+        rgba(220, 88, 52, 0.45), 
+        rgba(220, 88, 52, 0.45)
+      ),
+      url(../assets/img/about/bg-masthead.jpg);
+  }
