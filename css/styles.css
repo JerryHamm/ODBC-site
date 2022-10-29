@@ -160,7 +160,7 @@ iframe {
 
 /* styling card text */
 .card-container > p{
-  font-size: 1.2vw;
+  font-size: 1.5vw;
 }
 /* CUSTOM STYLING END */
 
@@ -176,6 +176,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
 }
 
 
@@ -1041,11 +1042,6 @@ progress {
     width: 25%;
   }
 
-  .card-col {
-    flex: 0 0 auto;
-    max-width: 20%;
-  }
-
   .col-sm-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
@@ -1257,11 +1253,6 @@ progress {
   .col-md-3 {
     flex: 0 0 auto;
     width: 25%;
-  }
-
-  .card-col {
-    flex: 0 0 auto;
-    max-width: 20%;
   }
 
   .ministry-info-col {
@@ -1484,7 +1475,7 @@ progress {
 
   .col-lg-3 {
     flex: 0 0 auto;
-    max-width: 25%;
+    max-width: 20%;
   }
 
   .card-col {
