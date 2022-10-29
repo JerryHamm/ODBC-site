@@ -77,9 +77,79 @@
 }
 
 
+
+
+
 /* CUSTOM STYLING START */
 .homepage-logo {
   max-width: 100%;
+}
+
+.lg-p {
+  font-size: 1.4rem;
+}
+
+.sm-p {
+  font-size: 0.9rem;
+}
+
+.sl-p {
+  font-size: 1.15rem;
+  color: #dc5834;
+}
+
+.phone {
+  color: #0d6efd;
+}
+
+.h1-add {
+  font-weight: bold;
+}
+
+.real-white {
+  color: #fff;
+}
+
+.event-col {
+  border: 0.3rem solid #dc5834;
+  border-radius: 20px;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+}
+
+.bg-about {
+  background-image: 
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(220, 88, 52, 0.45), 
+      rgba(220, 88, 52, 0.45)
+    ),
+    url(../assets/img/bg-about.jpg);
+}
+
+.bg-events {
+  background-image: 
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(220, 88, 52, 0.45), 
+      rgba(220, 88, 52, 0.45)
+    ),
+    url(../assets/img/bg-events.jpg);
+}
+
+iframe {
+  border-radius: 20px;
+}
+
+.pad {
+  padding-bottom: 15px;
+}
+
+.events-img {
+  width: 100%;
+  border-radius: 20px;
 }
 
 .card {
@@ -111,32 +181,12 @@
 .card-container > p{
   font-size: 1.2vw;
 }
-
-/* ministries styling */
-.ministries-container {
-  position: relative;
-  text-align: center;
-}
-
-.ministries-inner-container {
-  background-color: #000;
-}
-
-.ministries-info {
-  position: absolute;
-  color: #fff;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.ministries-btn {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 /* CUSTOM STYLING END */
+
+
+
+
+
 
 body {
   margin: 0;
@@ -3915,7 +3965,7 @@ textarea.form-control-lg {
   color: #6c757d;
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1.15rem;
 }
 
 .dropdown-item:hover, .dropdown-item:focus { 
@@ -4198,7 +4248,7 @@ textarea.form-control-lg {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 2rem;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -7637,8 +7687,8 @@ textarea.form-control-lg {
 }
 
 .py-5 {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
+  padding-top: 1.2rem !important;
+  padding-bottom: 1.2rem !important;
 }
 
 .pt-0 {
@@ -11446,6 +11496,10 @@ body {
   padding: 8rem 0;
 }
 
+.contact-page-section {
+  padding: 8rem 0 1rem 0;
+}
+
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
 }
@@ -11464,11 +11518,13 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
+  border: 1px solid #f4623a;
   background-color: #f4623a;
   opacity: 1;
 }
 
 hr.divider-light {
+  border: 1px solid #fff;
   background-color: #fff;
 }
 
@@ -11486,7 +11542,7 @@ hr.divider-light {
   color: #6c757d;
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1.25rem;
   padding: 0.75rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
@@ -11554,7 +11610,7 @@ header.masthead h1, header.masthead .h1 {
     padding-bottom: 0;
   }
   header.masthead p {
-    font-size: 1.15rem;
+    font-size: 1.4rem;
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
