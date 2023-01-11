@@ -42,8 +42,8 @@
 
     {% elif style_name == 'announcements' %}
 
-        <!-- anouncements/new page stylesheet -->
-        <link href="{%static 'odbc/css/anouncements-news.css'%}" rel="stylesheet" />
+        <!-- announcements/new page stylesheet -->
+        <link href="{%static 'odbc/css/announcements-news.css'%}" rel="stylesheet" />
 
     {% endif %}
     
@@ -85,7 +85,7 @@
                         </li>
                         
                         <li class="nav-item"><a class="nav-link" href="#thisweek">Latest</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Announcements / News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'announcements' %}">Announcements / News</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
 
