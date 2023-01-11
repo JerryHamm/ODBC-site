@@ -4,4 +4,11 @@ from django.shortcuts import render
 
 def index(request):
     
-    return render(request, 'odbc/base.html')
+    return render(request, 'odbc/index.html')
+
+
+def about(request):
+
+    style_name = 'about'
+    
+    return render(request, 'odbc/about.html', {'style_name' : style_name})
