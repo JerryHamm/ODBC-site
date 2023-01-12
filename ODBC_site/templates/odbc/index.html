@@ -22,11 +22,15 @@
 
                 <div class="col-lg-8 align-self-baseline">
 
-                    <p class="text-white-75 mb-5 lg-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam efficitur, sapien id viverra ultricies, dui eros venenatis risus, 
-                        vitae tincidunt sem lorem eget enim. Proin accumsan quis nisi a porttitor.
+                    <p class="text-white-75 lg-p">
+                        "For God so loved the world that he gave his one and only Son, 
+                        that whoever believes in him shall not perish but have eternal life."
+
+                        <br>
+
+                        <span style="font-size:0.75em;">John 3:16</span>
                     </p>
+
                     <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
 
                 </div>
@@ -46,17 +50,26 @@
             <h1 class="text-white mt-0 h1-add text-center">About Us!</h1>
             <hr class="divider divider-light"/>
 
-            <br/><br/>
+            <br/>
             
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 
                 <div class="col-lg-10 text-center pad">
 
-                    <p class="text-white-75 mb-4 lg-p">
+                    <p class="text-white-75 sl-p">
                         At ODBC, you will find a lively gathering of saints from all backgrounds 
                         and ages, eager to worship our Lord, fellowship with other believers, 
                         and seek the face of God. We strive to create a warm and rich atmosphere 
                         of worship, taking great pride in our music and talents as unto the Lord.
+                    </p>
+
+                    <p class="text-white-75 sl-p">
+                        When the music fades, however, our hearts and minds thirst only for 
+                        the Word of God, longing to receive the timely truths as revealed 
+                        by God and imparted by His servants. While we strive to convey 
+                        relevant and applicable messages, we uphold the authority of the 
+                        Bible and refuse to dilute the fundamental truths of our faith 
+                        and the good news of salvation through Jesus Christ.
                     </p>
 
                     <a class="btn btn-light btn-xl" href="{% url 'about' %}">Read more</a>
@@ -70,36 +83,33 @@
 
 
     <!-- This week at ODBC -->
-    <section class="page-section bg-light" id="thisweek">
+    <section class="index-page-section bg-light" id="thisweek">
         
         <div class="container px-4 px-lg-5">
 
             <h1 class="text-dark mt-0 h1-add text-center">This Week at OBDC</h1>
             <hr class="divider"/>
 
-            <br/><br/>
+            <br/>
             
             <div class="row gx-4 gx-lg-5 justify-content-center">
-                
-                <div class="col-lg-6 text-center pad">
 
-                    <p class="text-dark-75 mb-4 lg-p">
+                <div class="col-lg-10 text-center videoWrapper">
+                   
+                    <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUWhmF4nEnEkra19DIWoZb8g"></iframe>
+               
+                </div>
+                
+                
+                <div class="col-lg-10 text-center pad">
+
+                    <p class="text-dark-75 sl-p">
                         As we gather in-person or watch online, we want to make sure 
                         you have access to all the information you may need to connect
                         and learn at Open Doors Believers Chapel. We want to make the 
                         viewing experience as simple as possible.Every week you can 
                         check back here for our latest sunday messages!
                     </p>
-
-                    <a class="btn btn-primary btn-xl" href="#thisweek2">OBDC THIS WEEK!</a>
-               
-                </div>
-
-                <div class="col-lg-6 text-center">
-                   
-                    <iframe width="100%" height="120%" src="https://www.youtube.com/embed/zH3z86yaCyI" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                
                 </div>
             
@@ -111,7 +121,7 @@
     </section>
 
 
-    <!-- Latest Messages -->
+    <!-- miss a sunday -->
     <section class="latest-page-section" id="thisweek2">
         
         <div class="container px-4 px-lg-5">
@@ -120,51 +130,18 @@
                 
                 <div class="col-lg-10 text-center pad">
 
-                    <p class="text-dark-75 mb-4 lg-p">
+                    <p class="text-dark-75 lg-p">
                         Miss a Sunday? Want to check us out before you show up at ODBC? 
                         No problem! Just watch and listen to our audio and video media before 
                         you show up on a Sunday.
                     </p>
 
-                    <a class="btn btn-xl" style="background-color: #FF0000; color: #fff;" href="https://www.youtube.com/c/OpenDoorBelieversChapel">JOIN US ON YOUTUBE</a>
+                    <a class="btn btn-xl" style="background-color: #FF0000; color: #fff; margin-bottom:0.5em;" href="https://www.youtube.com/c/OpenDoorBelieversChapel">JOIN US ON YOUTUBE</a>
 
-                    <a class="btn btn-xl" style="background-color: #45bbff; color: #fff;" href="https://vimeo.com/odbcbelize">FIND US ON Vimeo</a>
+                    <a class="btn btn-xl" style="background-color: #45bbff; color: #fff; margin-bottom:0.5em;" href="https://vimeo.com/odbcbelize">FIND US ON VIMEO</a>
                
-                    <a class="btn btn-xl bg-primary" style="color: #fff;"  href="anouncements-news.html">CATCH UP WITH LATEST EVENTS</a>
+                    <a class="btn btn-xl bg-primary" style="color: #fff; margin-bottom:0.5em;"  href="anouncements-news.html">CATCH UP WITH LATEST EVENTS</a>
 
-                </div>
-            
-            </div>
-
-            <br/><br/>
-            <h1 class="text-dark mt-0 h1-add text-center">Latest Messages</h1>
-            <hr class="divider"/>
-
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                
-                <div class="col-lg-4 text-center latest-pad">
-                   
-                    <iframe width=100% height=160%  src="https://www.youtube.com/embed/uZngw4PyX38" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
-               
-                </div>
-
-                <div class="col-lg-4 text-center latest-pad">
-                   
-                    <iframe width=100% height=160% src="https://www.youtube.com/embed/TZXPl21vq88" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
-               
-                </div>
-
-                <div class="col-lg-4 text-center latest-pad">
-                   
-                    <iframe width=100% height=160% src="https://www.youtube.com/embed/_Dw4tmpiF6M" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
-               
-               
                 </div>
             
             </div>

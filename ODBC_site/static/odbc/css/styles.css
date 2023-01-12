@@ -81,8 +81,28 @@
 
 
 /* CUSTOM STYLING START */
+
+html, body {
+  overflow-x: hidden;
+}
+
 .homepage-logo {
   max-width: 100%;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  margin-bottom: 2.5em;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
 .lg-p {
@@ -94,8 +114,7 @@
 }
 
 .sl-p {
-  font-size: 1.15rem;
-  color: #dc5834;
+  font-size: 1.05rem;
 }
 
 .phone {
@@ -121,47 +140,10 @@
     url(../assets/img/home/bg-about.jpg);
 }
 
-iframe {
-  border-radius: 20px;
-}
-
 .pad {
   padding-bottom: 15px;
 }
 
-.latest-pad {
-  padding-bottom: 20%;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 #dc58348e;
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 #dc5834a1;
-}
-
-/* Add some padding inside the card container */
-.card-container {
-  padding: 2px 16px;
-  background-color:  #dc5834;
-  color: #fff;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-/* Add rounded corners to the top left and the top right corner of the image */
-.card-img {
-  border-radius: 5px 5px 0 0;
-}
-
-/* styling card text */
-.card-container > p{
-  font-size: 1.5vw;
-}
 /* CUSTOM STYLING END */
 
 
@@ -310,22 +292,6 @@ mark, .mark {
   background-color: #fcf8e3;
 }
 
-sub,
-sup {
-  position: relative;
-  font-size: 0.75em;
-  line-height: 0;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
 a {
   color: #f4623a;
   text-decoration: underline;
@@ -339,49 +305,8 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
-pre,
-code,
-kbd,
-samp {
-  font-family: var(--bs-font-monospace);
-  font-size: 1em;
-  direction: ltr /* rtl:ignore */;
-  unicode-bidi: bidi-override;
-}
-
-pre {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  overflow: auto;
-  font-size: 0.875em;
-}
-pre code {
-  font-size: inherit;
-  color: inherit;
-  word-break: normal;
-}
-
-code {
-  font-size: 0.875em;
-  color: #d63384;
-  word-wrap: break-word;
-}
 a > code {
   color: inherit;
-}
-
-kbd {
-  padding: 0.2rem 0.4rem;
-  font-size: 0.875em;
-  color: #fff;
-  background-color: #212529;
-  border-radius: 0.2rem;
-}
-kbd kbd {
-  padding: 0;
-  font-size: 1em;
-  font-weight: 700;
 }
 
 figure {
@@ -552,10 +477,6 @@ legend + * {
 
 output {
   display: inline-block;
-}
-
-iframe {
-  border: 0;
 }
 
 summary {
@@ -11308,9 +11229,13 @@ body {
   padding: 8rem 0;
 }
 
-.contact-page-section {
+.index-page-section {
   padding: 8rem 0 1rem 0;
 }
+
+.contact-page-section {
+  padding: 8rem 0 1rem 0;
+} 
 
 .latest-page-section {
   padding: 8rem 0 0rem 0;
