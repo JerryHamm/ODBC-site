@@ -117,6 +117,10 @@
   font-size: 1.4rem;
 }
 
+.lg-m {
+  font-size: 1.2rem;
+}
+
 .sm-p {
   font-size: 0.9rem;
 }
@@ -150,6 +154,36 @@
 
 .pad {
   padding-bottom: 15px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #dc58348e;
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 #dc5834a1;
+}
+
+/* Add some padding inside the card container */
+.card-container {
+  padding: 2px 16px;
+  background-color:  #dc5834;
+  color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+.card-img {
+  border-radius: 5px 5px 0 0;
+}
+
+/* styling card text */
+.card-container > p{
+  font-size: 1.5vw;
 }
 
 /* CUSTOM STYLING END */
@@ -1347,6 +1381,21 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
+
+@media only screen and (max-width: 599px) {
+  .col-lg-3 {
+    flex: 0 0 auto;
+    max-width: 30%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .col-lg-3 {
+    flex: 0 0 auto;
+    max-width: 20%;
+  }
+}
+
 @media (min-width: 992px) {
   .col-lg {
     flex: 1 0 0%;
@@ -1400,11 +1449,6 @@ progress {
   .col-lg-2 {
     flex: 0 0 auto;
     width: 16.66666667%;
-  }
-
-  .col-lg-3 {
-    flex: 0 0 auto;
-    max-width: 20%;
   }
 
   .card-col {
@@ -5925,6 +5969,7 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
+  margin-bottom: -75px;
 }
 
 .carousel.pointer-event {
@@ -5952,6 +5997,11 @@ textarea.form-control-lg {
           backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
+
+.carousel-item img{
+  border-radius: 20px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
@@ -6011,7 +6061,7 @@ textarea.form-control-lg {
   justify-content: center;
   width: 15%;
   padding: 0;
-  color: #fff;
+  color: #f4623a;
   text-align: center;
   background: none;
   border: 0;
@@ -6027,7 +6077,7 @@ textarea.form-control-lg {
 .carousel-control-prev:hover, .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-  color: #fff;
+  color: #f4623a;
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
@@ -6044,11 +6094,23 @@ textarea.form-control-lg {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
   width: 2rem;
   height: 2rem;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100% 100%;
+}
 }
 
 /* rtl:options: {
@@ -6060,11 +6122,11 @@ textarea.form-control-lg {
   } ]
 } */
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f4623a'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f4623a'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .carousel-indicators {
@@ -6091,7 +6153,7 @@ textarea.form-control-lg {
   margin-left: 3px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #f4623a;
   background-clip: padding-box;
   border: 0;
   border-top: 10px solid transparent;
@@ -7234,6 +7296,10 @@ textarea.form-control-lg {
 .my-auto {
   margin-top: auto !important;
   margin-bottom: auto !important;
+}
+
+.mt--1 {
+  margin-top: -70px !important;
 }
 
 .mt-0 {
