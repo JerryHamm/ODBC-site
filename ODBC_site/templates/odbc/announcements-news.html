@@ -32,99 +32,41 @@
 
             <br/><br/>
             
-            <div class="row gx-4 gx-lg-5 justify-content-center bg-light event-col">
-                
-                <div class="col-lg-3 text-center">
+            {% if odbc_events%}
 
-                    <img class="events-img" src="{% static 'odbc/assets/img/events/default.jpg' %}">
+                {% for odbc in odbc_events%}
 
-                </div>
-
-                <div class="col-lg-9">
-
-                    <div>
-
-                        <h2>ODBC default</h2>
-                        <p class="sl-p">
-                            December #th 2022 10:00 am CST
-                        </p>
-
-                        <p class="sl-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Donec mollis risus non rutrum suscipit. Mauris eu felis 
-                            turpis. Morbi sodales, dolor a lobortis posuere, metus 
-                            orci tincidunt magna, vel vehicula tortor dui eu nibh. 
-                        </p>
-
+                    <div class="row mb-4 gx-4 gx-lg-5 justify-content-center bg-light event-col">
+                    
+                        <div class="col-lg-3 text-center">
+        
+                            <img class="events-img" src="{{odbc.event_image.url}}">
+        
+                        </div>
+        
+                        <div class="col-lg-9">
+        
+                            <div>
+        
+                                <h2>{{ odbc.event_title}}</h2>
+                                <p class="sl-p">
+                                    {{ odbc.event_date}} CST
+                                </p>
+        
+                                <p class="sl-p">
+                                    {{ odbc.event_description}}
+                                </p>
+        
+                            </div>
+        
+                        </div>
+                    
                     </div>
 
-                </div>
-            
-            </div>
+                {% endfor %}
 
-            <div class="row gx-4 gx-lg-5 justify-content-center event-col-none"></div>
+            {% endif %}
 
-            <div class="row gx-4 gx-lg-5 justify-content-center bg-light event-col pad">
-                
-                <div class="col-lg-3 text-center">
-
-                    <img class="events-img" src="{% static 'odbc/assets/img/events/default.jpg' %}">
-
-                </div>
-
-                <div class="col-lg-9">
-
-                    <div>
-
-                        <h2>ODBC default</h2>
-                        <p class="sl-p">
-                            December #th 2022 10:00 am CST
-                        </p>
-
-                        <p class="sl-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Donec mollis risus non rutrum suscipit. Mauris eu felis 
-                            turpis. Morbi sodales, dolor a lobortis posuere, metus 
-                            orci tincidunt magna, vel vehicula tortor dui eu nibh. 
-                        </p>
-
-                    </div>
-
-                </div>
-            
-            </div>
-
-            <div class="row gx-4 gx-lg-5 justify-content-center event-col-none"></div>
-
-            <div class="row gx-4 gx-lg-5 justify-content-center bg-light event-col pad">
-                
-                <div class="col-lg-3 text-center">
-
-                    <img class="events-img" src="{% static 'odbc/assets/img/events/default.jpg' %}">
-
-                </div>
-
-                <div class="col-lg-9">
-
-                    <div>
-
-                        <h2>ODBC default</h2>
-                        <p class="sl-p">
-                            December #th 2022 10:00 am CST
-                        </p>
-
-                        <p class="sl-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Donec mollis risus non rutrum suscipit. Mauris eu felis 
-                            turpis. Morbi sodales, dolor a lobortis posuere, metus 
-                            orci tincidunt magna, vel vehicula tortor dui eu nibh. 
-                        </p>
-
-                    </div>
-
-                </div>
-            
-            </div>
         </div>
 
     </section>

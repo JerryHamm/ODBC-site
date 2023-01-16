@@ -16,10 +16,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from odbc import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('about/', views.about, name='about'),
-    path('announcements/', views.announcements, name='announcements')
+    path('announcements/', views.announcements, name='announcements'),
+    
+    path('odbc-admin/', views.odbc_admin, name='odbc-admin'),
+    path('odbc-admin-create/', views.odbc_admin_create, name='odbc-admin-create'),
+    path('odbc-admin-update/<int:id>/', views.odbc_admin_update, name='odbc-admin-update'),
+    path('odbc-admin-delete/<int:id>/', views.odbc_admin_delete, name='odbc-admin-delete'),
 ]
+
+if settings.DEBUG:
+     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
