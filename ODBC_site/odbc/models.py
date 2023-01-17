@@ -1,10 +1,13 @@
 from django.db import models
+from django.utils.timezone import now
+from datetime import date
 
 # Create your models here.
 class events(models.Model):
-    event_title =  models.CharField(max_length=128)
-    event_date =  models.DateTimeField(max_length=128)
-    event_description =  models.CharField(max_length=628)
+    event_title =  models.CharField(max_length=128, blank=False)
+    event_date =  models.DateField(max_length=128, default=date.today,  editable=True)
+    event_time = models.TimeField(auto_now=False, auto_now_add=False, default=now, editable=True)
+    event_description =  models.CharField(max_length=628, blank=False)
     event_image = models.ImageField(upload_to='announcements/event_images', default="../media/announcements/event_images/default.jpg", blank=True)
 
     def __str__(self):
