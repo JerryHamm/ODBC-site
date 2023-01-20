@@ -50,7 +50,7 @@
         
                                 <h2>{{ odbc.event_title}}</h2>
                                 <p class="sl-p">
-                                    {{ odbc.event_date}} CST
+                                    {{ odbc.event_date}} - {{ odbc.event_time}} CST
                                 </p>
         
                                 <p class="sl-p">
@@ -64,6 +64,18 @@
                     </div>
 
                 {% endfor %}
+
+            {% else %}
+
+                <div class="row pt-5 mb-4 gx-4 gx-lg-5 justify-content-center bg-light event-col">
+                    
+                    <div class="col-lg-6 text-center">
+
+                        <p center="sm-p">There are no upcoming events</p>
+
+                    </div>
+                
+                </div>
 
             {% endif %}
 
