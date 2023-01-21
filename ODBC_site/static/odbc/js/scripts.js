@@ -24,6 +24,7 @@ window.addEventListener('DOMContentLoaded', event => {
             document.getElementById("nav-dropdown-item-4").style.color = "#6c757d";
             document.getElementById("nav-dropdown-item-5").style.color = "#6c757d";
             document.getElementById("nav-dropdown-item-6").style.color = "#6c757d";
+            document.getElementById("nav-dropdown-item-7").style.color = "#6c757d";
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
             document.getElementById("nav-dropdown-item-1").style.color = "#000";
@@ -32,6 +33,7 @@ window.addEventListener('DOMContentLoaded', event => {
             document.getElementById("nav-dropdown-item-4").style.color = "#000";
             document.getElementById("nav-dropdown-item-5").style.color = "#000";
             document.getElementById("nav-dropdown-item-6").style.color = "#000";
+            document.getElementById("nav-dropdown-item-7").style.color = "#000";
         }
 
     };
