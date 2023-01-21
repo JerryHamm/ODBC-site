@@ -18,13 +18,13 @@ window.addEventListener('DOMContentLoaded', event => {
         }
         if (window.scrollY === 0) {
             navbarCollapsible.classList.remove('navbar-shrink')
-            document.getElementById("nav-dropdown-item-1").style.color = "#6c757d";
-            document.getElementById("nav-dropdown-item-2").style.color = "#6c757d";
-            document.getElementById("nav-dropdown-item-3").style.color = "#6c757d";
-            document.getElementById("nav-dropdown-item-4").style.color = "#6c757d";
-            document.getElementById("nav-dropdown-item-5").style.color = "#6c757d";
-            document.getElementById("nav-dropdown-item-6").style.color = "#6c757d";
-            document.getElementById("nav-dropdown-item-7").style.color = "#6c757d";
+            document.getElementById("nav-dropdown-item-1").style.fontSize = "0.9rem";
+            document.getElementById("nav-dropdown-item-2").style.fontSize = "0.9rem";
+            document.getElementById("nav-dropdown-item-3").style.fontSize = "0.9rem";
+            document.getElementById("nav-dropdown-item-4").style.fontSize = "0.9rem";
+            document.getElementById("nav-dropdown-item-5").style.fontSize = "0.9rem";
+            document.getElementById("nav-dropdown-item-6").style.fontSize = "0.9rem";
+            document.getElementById("nav-dropdown-item-7").style.fontSize = "0.9rem";
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
             document.getElementById("nav-dropdown-item-1").style.color = "#000";
@@ -34,6 +34,13 @@ window.addEventListener('DOMContentLoaded', event => {
             document.getElementById("nav-dropdown-item-5").style.color = "#000";
             document.getElementById("nav-dropdown-item-6").style.color = "#000";
             document.getElementById("nav-dropdown-item-7").style.color = "#000";
+            document.getElementById("nav-dropdown-item-1").style.fontSize = "0.9rem";
+            document.getElementById("nav-dropdown-item-2").style.fontSize = "0.9rem";
+            document.getElementById("nav-dropdown-item-3").style.fontSize = "0.9rem";
+            document.getElementById("nav-dropdown-item-4").style.fontSize = "0.9rem";
+            document.getElementById("nav-dropdown-item-5").style.fontSize = "0.9rem";
+            document.getElementById("nav-dropdown-item-6").style.fontSize = "0.9rem";
+            document.getElementById("nav-dropdown-item-7").style.fontSize = "0.9rem";
         }
 
     };

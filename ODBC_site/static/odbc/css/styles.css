@@ -156,8 +156,14 @@
     linear-gradient(
       /* rgba(255, 0, 0, 0.45), 
       rgba(255, 0, 0, 0.45) */
-      rgba(220, 88, 52, 0.45), 
-      rgba(220, 88, 52, 0.45)
+      rgba(84, 84, 44, 0.622), 
+      rgba(84, 71, 35, 0.365)
+    ),
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(220, 88, 52, 0.848), 
+      rgba(220, 88, 52, 0.696)
     ),
     url(../assets/img/home/bg-about.jpg);
 }
@@ -3936,7 +3942,7 @@ textarea.form-control-lg {
 }
 
 .nav-dropdown-item-text {
-  color: #6c757d;
+  color: #000000;
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   font-size: 1.15rem;
@@ -6017,6 +6023,28 @@ textarea.form-control-lg {
   display: block;
   clear: both;
   content: "";
+}
+
+@media only screen and (max-width: 992px) {
+
+  .carousel_smaller {
+    margin-left: 0%;
+  }
+
+  .w-carousel {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  .carousel_smaller {
+    margin-left: 12.5%;
+  }
+
+  .w-carousel {
+    width: 75% !important;
+  }
 }
 
 .carousel-item {
