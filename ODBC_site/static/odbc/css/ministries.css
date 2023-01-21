@@ -1,0 +1,12 @@
+.bg-ministry {
+  background-image: 
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(220, 88, 52, 0.45), 
+      rgba(220, 88, 52, 0.45)
+    ),
+    url(../assets/img/ministries/bg-masthead.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -22,7 +22,7 @@
     </section>
 
     <!-- Greetings from our Elders -->
-    <section class="page-section pb-5" id="about">
+    <section class="page-section pb-5 bg-leaves-reverse" id="about">
         
         <div class="container px-4 px-lg-5">
 
@@ -280,13 +280,13 @@
                         <!-- Baptism Ministry -->
                         <div class="carousel-item active">
                             
-                            <img src="https://dummyimage.com/640x360/eeee/jjj" class="d-block w-100">
+                            <img src="https://dummyimage.com/640x360/gggg/aaa" class="d-block w-100">
 
                             <div class="carousel-caption">
 
                                 <h3>Baptism Ministry</h3>
 
-                                <a class="btn btn-primary btn-sm" href="#about">Read more</a>
+                                <a class="btn btn-primary btn-sm" href="{% url 'baptism' %}">Read more</a>
 
                             </div>
                     
@@ -295,13 +295,13 @@
                         <!-- Mens Ministry -->
                         <div class="carousel-item">
                             
-                            <img src="https://dummyimage.com/640x360/aaaa/rrr" class="d-block w-100">
+                            <img src="{% static 'odbc/assets/img/ministries/mens-ministry.jpeg' %}" class="d-block w-100">
 
                             <div class="carousel-caption">
 
                                 <h3>Men's Ministry</h3>
 
-                                <a class="btn btn-primary btn-sm" href="#about">Read more</a>
+                                <a class="btn btn-primary btn-sm" href="{% url 'mens' %}">Read more</a>
 
                             </div>
                     
@@ -316,7 +316,7 @@
 
                                 <h3>Women's Ministry</h3>
 
-                                <a class="btn btn-primary btn-sm" href="#about">Read more</a>
+                                <a class="btn btn-primary btn-sm" href="{% url 'womens' %}">Read more</a>
 
                             </div>
                     
@@ -331,7 +331,7 @@
 
                                 <h3>Mentorship Ministry</h3>
 
-                                <a class="btn btn-primary btn-sm" href="#about">Read more</a>
+                                <a class="btn btn-primary btn-sm" href="{% url 'mentorship' %}">Read more</a>
 
                             </div>
                     
@@ -346,7 +346,7 @@
 
                                 <h3>Camping Ministry</h3>
 
-                                <a class="btn btn-primary btn-sm" href="#about">Read more</a>
+                                <a class="btn btn-primary btn-sm" href="{% url 'camp' %}">Read more</a>
 
                             </div>
                     
@@ -355,28 +355,28 @@
                         <!-- Girls Club -->
                         <div class="carousel-item">
                             
-                            <img src="https://dummyimage.com/640x360/cccc/yyy" class="d-block w-100">
+                            <img src="{% static 'odbc/assets/img/ministries/girls-club.jpeg' %}" class="d-block w-100">
 
                             <div class="carousel-caption">
 
                                 <h3>Girls Club</h3>
 
-                                <a class="btn btn-primary btn-sm" href="#about">Read more</a>
+                                <a class="btn btn-primary btn-sm" href="{% url 'girls' %}">Read more</a>
 
                             </div>
                     
                         </div>
 
-                        <!-- Bible Club -->
+                        <!-- Childrens Ministry -->
                         <div class="carousel-item">
                             
-                            <img src="https://dummyimage.com/640x360/dddd/nnn" class="d-block w-100">
+                            <img src="{% static 'odbc/assets/img/ministries/childrens-ministry.jpeg' %}" class="d-block w-100">
 
                             <div class="carousel-caption">
 
-                                <h3>Bible Club</h3>
+                                <h3>Childrens Ministry</h3>
 
-                                <a class="btn btn-primary btn-sm" href="#about">Read more</a>
+                                <a class="btn btn-primary btn-sm" href="{% url 'children' %}">Read more</a>
 
                             </div>
                     

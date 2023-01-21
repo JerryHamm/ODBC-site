@@ -7,4 +7,6 @@
         rgba(220, 88, 52, 0.45)
       ),
       url(../assets/img/about/bg-masthead.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
   }

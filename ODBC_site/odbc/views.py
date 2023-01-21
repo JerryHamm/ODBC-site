@@ -30,6 +30,62 @@ def announcements(request):
     return render(request, 'odbc/announcements-news.html', {'style_name' : style_name, 'odbc_events': odbc_events})
 
 
+# baptism ministry page
+def baptism(request):
+
+    style_name = 'ministries'
+    
+    return render(request, 'odbc/ministries/baptism-ministry.html', {'style_name' : style_name})
+
+
+# children's ministry page
+def children(request):
+
+    style_name = 'ministries'
+    
+    return render(request, 'odbc/ministries/childrens-ministry.html', {'style_name' : style_name})
+
+
+# men's ministry page
+def mens(request):
+
+    style_name = 'ministries'
+    
+    return render(request, 'odbc/ministries/mens-ministry.html', {'style_name' : style_name})
+
+
+# mentorship ministry page
+def mentorship(request):
+
+    style_name = 'ministries'
+    
+    return render(request, 'odbc/ministries/mentorship-ministry.html', {'style_name' : style_name})
+
+
+# women's ministry page
+def women(request):
+
+    style_name = 'ministries'
+    
+    return render(request, 'odbc/ministries/womens-ministry.html', {'style_name' : style_name})
+
+
+# girl's clup page
+def girls(request):
+
+    style_name = 'ministries'
+    
+    return render(request, 'odbc/ministries/girls-club.html', {'style_name' : style_name})
+
+
+# camp ministry page
+def camp(request):
+
+    style_name = 'ministries'
+    
+    return render(request, 'odbc/ministries/camp-ministry.html', {'style_name' : style_name})
+
+
 # admin dashboard
 def odbc_admin(request):
 
