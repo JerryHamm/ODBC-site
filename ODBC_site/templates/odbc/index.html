@@ -23,7 +23,7 @@
 
                 <div class="col-lg-8 align-self-baseline">
 
-                    <p class="text-white-75 lg-p">
+                    <p class="text-white-75 head-lg-p">
                         "For God so loved the world that he gave his one and only Son, 
                         that whoever believes in him shall not perish but have eternal life."
 
@@ -32,7 +32,7 @@
                         <span style="font-size:0.75em;">John 3:16</span>
                     </p>
 
-                    <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                    <a class="btn btn-xl btn-outline-primary animate-bottom" href="#about">Watch our latest sermon <span class="bi bi-youtube yt-icon"></span></a>
 
                 </div>
 
@@ -44,36 +44,28 @@
 
 
     <!-- About -->
-    <section class="page-section bg-about" id="about">
+    <section class="page-section mt-0" id="about">
         
-        <div class="container px-4 px-lg-5">
+        <div class="container px-5 px-lg-5">
 
-            <h1 class="text-white mt-0 h1-add text-center">About Us!</h1>
+            <h1 class="mt-0 h1-add text-center"><span class='h1-color-2'>Who</span> <span class='h1-color-1'> we are</span></h1>
             <hr class="divider divider-light"/>
-
-            <br/>
             
-            <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="row gx-4 gx-lg-5 mt-0 pt-0 justify-content-center">
                 
                 <div class="col-lg-10 text-center pad">
 
-                    <p class="text-white-75 sl-p">
-                        At ODBC, you will find a lively gathering of saints from all backgrounds 
+                    <p class="lg-p-thin">
+                        We are a lively athering of saints from all backgrounds 
                         and ages, eager to worship our Lord, fellowship with other believers, 
-                        and seek the face of God. We strive to create a warm and rich atmosphere 
-                        of worship, taking great pride in our music and talents as unto the Lord.
+                        and seek the face of God.
                     </p>
 
-                    <p class="text-white-75 sl-p">
-                        When the music fades, however, our hearts and minds thirst only for 
-                        the Word of God, longing to receive the timely truths as revealed 
-                        by God and imparted by His servants. While we strive to convey 
-                        relevant and applicable messages, we uphold the authority of the 
-                        Bible and refuse to dilute the fundamental truths of our faith 
-                        and the good news of salvation through Jesus Christ.
+                    <p class="lg-p-thin">
+                        We meet on <b>Sundays at 11am</b>, to worship in person at #5 Muhammed Ali Street, Belize City and also online.
                     </p>
 
-                    <a class="btn btn-light btn-xl" href="{% url 'about' %}">Read more</a>
+                    <a class="btn btn-outline-secondary btn-xl" href="{% url 'about' %}">Read more</a>
                
                 </div>
             
@@ -84,73 +76,101 @@
 
 
     <!-- This week at ODBC -->
-    <section class="index-page-section bg-leaves-reverse pt-5" id="thisweek">
+    <section class="index-page-section bg-gradient pt-5" id="thisweek">
         
         <div class="container px-4 px-lg-5">
 
-            <h1 class="text-dark mt-0 h1-add text-center">This Week at OBDC</h1>
+            <h1 class="text-dark h1-add text-center text-white"><span>This Week</span> <span> at ODBC</span></h1>
             <hr class="divider"/>
 
-            <br/>
-            
-            <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="row gx-4 gx-lg-5 pt-5 justify-content-center">
 
-                <div class="col-lg-10 text-center videoWrapper">
+                <div class="col-lg-6 text-center videoWrapper">
                    
                     <iframe frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUWhmF4nEnEkra19DIWoZb8g"></iframe>
                
                 </div>
-                
-                
-                <div class="col-lg-10 text-center pad">
 
-                    <p class="text-dark-75 sl-p">
+                <div class="col-lg-6 text-center">
+
+                    <p class="lg-p text-white">
+
                         As we gather in-person or watch online, we want to make sure 
                         you have access to all the information you may need to connect
                         and learn at Open Doors Believers Chapel. We want to make the 
                         viewing experience as simple as possible.Every week you can 
                         check back here for our latest sunday message!
+
                     </p>
+
+                    <a class="btn btn-warning btn-xl" href="https://www.youtube.com/c/OpenDoorBelieversChapel">JOIN US ON YOUTUBE</a>
+
+                    <a class="btn btn-info btn-xl" href="https://vimeo.com/odbcbelize">FIND US ON VIMEO</a>
                
                 </div>
             
             </div>
 
         </div>
-
-        <br/><br/>
 
     </section>
 
-
-    <!-- miss a sunday -->
-    <section class="latest-page-section pt-5" id="thisweek2">
+    <!-- Upcoming Events -->
+    <section class="index-page-section" id="thisweek">
         
         <div class="container px-4 px-lg-5">
-            
-            <div class="row gx-4 gx-lg-5 justify-content-center">
+
+            <h1 class="mt-0 h1-add text-center"><span class='h1-color-2'>Upcoming</span> <span class='h1-color-1'> Events</span></h1>
+            <hr class="divider"/>
+
+            {% if odbc_events%}
+
+            {% for odbc in odbc_events%}
+
+                <div class="row mb-4 gx-4 gx-lg-5 justify-content-center">
                 
-                <div class="col-lg-10 text-center pad">
-
-                    <p class="text-dark-75 lg-p">
-                        Miss a Sunday? Want to check us out before you show up at ODBC? 
-                        No problem! Just watch and listen to our audio and video media before 
-                        you show up on a Sunday.
-                    </p>
-
-                    <a class="btn btn-xl" style="background-color: #FF0000; color: #fff; margin-bottom:0.5em;" href="https://www.youtube.com/c/OpenDoorBelieversChapel">JOIN US ON YOUTUBE</a>
-
-                    <a class="btn btn-xl" style="background-color: #45bbff; color: #fff; margin-bottom:0.5em;" href="https://vimeo.com/odbcbelize">FIND US ON VIMEO</a>
-               
-                    <a class="btn btn-xl bg-primary" style="color: #fff; margin-bottom:0.5em;"  href="anouncements-news.html">CATCH UP WITH LATEST EVENTS</a>
-
+                    <div class="col-lg-2 col-lg-2-custom text-center events-img">
+    
+                        <img class="events-img" src="{{odbc.event_image.url}}">
+    
+                    </div>
+    
+                    <div class="col-lg-4 event-col bg-light">
+    
+                        <div>
+    
+                            <span class="lg-p h1-color-2">{{ odbc.event_title}}</span>
+                            <p class="sl-p h1-color-1">
+                                {{ odbc.event_date}} - {{ odbc.event_time}} CST
+                            </p>
+    
+                            <p class="sl-p">
+                                {{ odbc.event_description}}
+                            </p>
+    
+                        </div>
+    
+                    </div>
+                
                 </div>
-            
-            </div>
+
+            {% endfor %}
+
+            {% else %}
+
+                <div class="row  pt-4 mb-4 gx-4 gx-lg-5 justify-content-center bg-light event-col-none">
+                    
+                    <div class="col-lg-6 text-center">
+
+                        <p center="sm-p">There are no upcoming events</p>
+
+                    </div>
+                
+                </div>
+
+            {% endif %}
 
         </div>
-
-        <br/><br/>
 
     </section>
 

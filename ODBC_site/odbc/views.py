@@ -8,8 +8,10 @@ from odbc.forms import EditEventsForm
 def index(request):
     
     style_name = 'index'
+
+    odbc_events = events.objects.order_by('event_date')
     
-    return render(request, 'odbc/index.html', {'style_name' : style_name})
+    return render(request, 'odbc/index.html', {'style_name' : style_name, 'odbc_events': odbc_events})
 
 
 # about page
@@ -18,16 +20,6 @@ def about(request):
     style_name = 'about'
     
     return render(request, 'odbc/about.html', {'style_name' : style_name})
-
-
-# announcements page
-def announcements(request):
-
-    style_name = 'announcements'
-
-    odbc_events = events.objects.order_by('event_date')
-    
-    return render(request, 'odbc/announcements-news.html', {'style_name' : style_name, 'odbc_events': odbc_events})
 
 
 # baptism ministry page
