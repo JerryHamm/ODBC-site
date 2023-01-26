@@ -157,18 +157,17 @@
                         <!-- Showing the latest nav option only on the index page (home page) -->
                         {% if style_name == 'index' %}
 
-                            <li class="nav-item"><a class="nav-link" href="#thisweek">Latest</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#thisweek">LATEST</a></li>
 
-                        {% endif %}                        
-                        <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">Who we are</a></li>
-
-                        <li class="nav-item"><a class="nav-link" href="">Sermons and Resources</a></li>
+                        {% endif %}  
+                                              
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">ABOUT US</a></li>
 
                         <!-- Nav dropdown -->
                         <li class="nav-item dropdown">
 
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#portfolio" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Ministries
+                            MINISTRIES
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -184,14 +183,16 @@
                             </div>
 
                         </li>
+
+                        <li class="nav-item"><a class="nav-link" href="">WATCH</a></li>
                         
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">CONTACT US</a></li>
 
                         <!-- Give button -->
                         <div class="d-lg-none d-xl-none d-xxl-none">
 
                             <a href="">
-                                <button type="button" class="btn btn-primary">Give</button>
+                                <button type="button" class="btn btn-primary">GIVE</button>
                             </a>
                             
                         </div>
@@ -212,6 +213,7 @@
             </div>
 
         </nav>
+
 
         <content class="">
 
@@ -319,9 +321,6 @@
             </footer>
 
         </content>
-    
-
-
     
 
         <!-- Bootstrap core JS-->

@@ -3337,8 +3337,8 @@ textarea.form-control-lg {
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #c58700;
-  border-color: #c58700;
+  background-color: #e39d06;
+  border-color: #e39d06;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -3582,7 +3582,6 @@ textarea.form-control-lg {
 .btn-outline-primary:hover {
   color: #fff;
   background-color: #eca405;
-  border-color: #07204f6d;
 }
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
   box-shadow: 0 0 0 0.25rem rgba(244, 98, 58, 0.5);
@@ -11564,7 +11563,7 @@ hr.divider-light {
   color: #6c757d;
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   padding: 0.75rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
@@ -11586,7 +11585,7 @@ hr.divider-light {
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     color: rgba(255, 255, 255, 0.7);
-    padding: 0 1rem;
+    padding: 0 2.4rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #fff;
@@ -11605,7 +11604,7 @@ hr.divider-light {
     color: #eca405;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
-    color: #212529;
+    color: #07204F;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
     color: #eca405;
