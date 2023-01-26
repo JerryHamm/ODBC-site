@@ -60,4 +60,25 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
 
+    //Array of images to show in homepage header slide show
+    // var images=new Array(mast1, mast2, mast3, mast4);
+    
+    // var nextimage=0;
+
+    // doSlideshow();
+
+    // function doSlideshow(){
+    //     if(nextimage>=images.length){nextimage=0;}
+    //     $('header')
+    //     .css({'background':'linear-gradient(to bottom, rgba(7, 32, 79, 0.8) 0%, rgba(7, 32, 79, 0.8) 100%), url("'+images[nextimage++]+'")', 
+    //     'background-position':'center',
+    //     'background-repeat':'no-repeat',
+    //     'background-attachment':'scroll',
+    //     'background-size':'cover',
+    //     'animation':'masthead-slide 10s infinite alternate'})
+    //     .fadeIn(500,function(){
+    //         setTimeout(doSlideshow, 5000);
+    //     });
+    // }
+
 });
