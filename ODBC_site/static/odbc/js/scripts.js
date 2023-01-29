@@ -62,7 +62,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     //Array of images to show in homepage header slide show
     // var images=new Array(mast1, mast2, mast3, mast4);
-    
+     
     // var nextimage=0;
 
     // doSlideshow();
