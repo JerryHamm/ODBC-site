@@ -12,3 +12,12 @@ class events(models.Model):
 
     def __str__(self):
         return self.event_title
+
+class work_blog(models.Model):
+    work_title =  models.CharField(max_length=128, blank=False)
+    work_summary =  models.CharField(max_length=128, blank=False)
+    work_description =  models.CharField(max_length=628, blank=False)
+    work_image = models.ImageField(upload_to='work_blog/work_images', default="../media/work_blog/work_images/default.jpg", blank=True)
+
+    def __str__(self):
+        return self.work_title

@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from odbc.models import events
-from odbc.forms import EditEventsForm
+from odbc.models import events, work_blog
+from odbc.forms import EditEventsForm, AddWorkPost
 
 # Create your views here.
 
@@ -10,8 +10,10 @@ def index(request):
     style_name = 'index'
 
     odbc_events = events.objects.order_by('event_date')
+
+    work_posts = work_blog.objects.all().order_by('work_title').values()
     
-    return render(request, 'odbc/index.html', {'style_name' : style_name, 'odbc_events': odbc_events})
+    return render(request, 'odbc/index.html', {'style_name' : style_name, 'odbc_events' : odbc_events, 'work_posts' : work_posts})
 
 
 # about page

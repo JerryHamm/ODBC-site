@@ -341,14 +341,14 @@ padding-bottom: 1.5vw;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 #eca4058e;
+  box-shadow: 0 4px 8px 0 #07204f8e;
   transition: 0.3s;
   border-radius: 5px; /* 5px rounded corners */
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 #eca405a1;
+  box-shadow: 0 8px 16px 0 #07204fa1;
 }
 
 /* Add some padding inside the card container */
