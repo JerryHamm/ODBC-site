@@ -22,13 +22,12 @@
 
                 <div class="col-lg-8 align-self-baseline">
 
-                    <p class="text-white-75 head-lg-p">
-                        "For God so loved the world that he gave his one and only Son, 
-                        that whoever believes in him shall not perish but have eternal life."
+                    <p class="text-white head-lg-p">
+                        "I know your deeds. See, I have placed before you an open door that no one can shut..."
 
                         <br>
 
-                        <span style="font-size:0.75em;">John 3:16</span>
+                        <span style="font-size:0.75em;">Rev 3:8</span>
                     </p>
 
                     <a class="btn btn-xl btn-outline-primary animate-bottom" href="#about">Watch our latest sermon <span class="bi bi-youtube yt-icon"></span></a>
@@ -47,7 +46,7 @@
         
         <div class="container px-5 px-lg-5">
 
-            <h1 class="mt-0 h1-add text-center"><span class='h1-color-2'>Who</span> <span class='h1-color-1'> we are</span></h1>
+            <h1 class="mt-0 h1-add text-center"><span class='h1-color-2'>Greetings from</span> <span class='h1-color-1'> our Elders</span></h1>
             <hr class="divider divider-light"/>
             
             <div class="row gx-4 gx-lg-5 mt-0 pt-0 justify-content-center">
@@ -55,9 +54,9 @@
                 <div class="col-lg-10 text-center pad">
 
                     <p class="lg-p-thin">
-                        We are a lively athering of saints from all backgrounds 
-                        and ages, eager to worship our Lord, fellowship with other believers, 
-                        and seek the face of God.
+                        Greeting form all the elders at ODBC! Whether you are searching for more information about our assembly, 
+                        looking for ways to serve in one or more of our ministries, or seeking answers to questions about the Christian 
+                        faith, we pray our online resource aids you along the right course according to the Lord’s will.
                     </p>
 
                     <p class="lg-p-thin">
@@ -75,7 +74,7 @@
 
 
     <!-- This week at ODBC -->
-    <section class="index-page-section bg-gradient pt-5" id="thisweek">
+    <section class="index-page-section bg-gradient pt-5">
         
         <div class="container px-4 px-lg-5">
 
@@ -114,8 +113,164 @@
 
     </section>
 
+
+    <!-- latest messages -->
+    <section class="index-page-section mb-5 pb-5">
+        
+        <div class="container px-4 px-lg-5">
+
+            <h1 class="text-dark h1-add text-center text-white"><span class="h1-color-2">We have a<span class="h1-color-1"> vast collection </span>of sermons for you to</span><span class="h1-color-1"> check out</span><span class="h1-color-2">:</span></h1>
+            <hr class="divider"/>
+
+            <div class="row gx-4 gx-lg-5 pt-5 justify-content-center">
+
+                <div class="col-lg-4-mod text-center videoWrapper">
+                   
+                    <iframe frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUWhmF4nEnEkra19DIWoZb8g&index=2"></iframe>
+               
+                </div>
+
+                <div class="col-lg-4-mod-2 text-center videoWrapper">
+                   
+                    <iframe frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUWhmF4nEnEkra19DIWoZb8g&index=3"></iframe>
+               
+                </div>
+
+                <div class="col-lg-4-mod-last text-center videoWrapper">
+                   
+                    <iframe frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUWhmF4nEnEkra19DIWoZb8g&index=4"></iframe>
+               
+                </div>
+
+                <div class="col-lg-10 text-center pad">
+                    
+                    <a class="btn btn-primary btn-xl" href="{% url 'about' %}">Watch more</a>
+               
+                </div>
+            
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Our Work -->
+    <section class="index-page-section bg-gradient-2 pt-5">
+        
+        <div class="container px-4 px-lg-5">
+
+            <div class="row gx-4 gx-lg-5 pt-5 pb-5 justify-content-center">
+
+                <div class="col-lg-10 text-center">
+
+                    <p class="lg-p text-white">
+
+                        Whatever you do, work at it with all your heart, working for the Lord, not for human masters, 
+                        since you know that you will receive an inheritance from the Lord as a reward. It is the Lord Christ you are serving. 
+
+                    </p>
+
+                    <p class="lg-p text-white">
+
+                        Colossians 3:23-24
+
+                    </p>
+               
+                </div>
+            
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="index-page-section pb-5 mt-5 pt-5">
+        
+        <div class="container px-0 px-lg-0">
+
+            <h1 class="mt-0 h1-add text-center"><span class='h1-color-2'>Our</span> <span class='h1-color-1'> Work</span></h1>
+            <hr class="divider"/>
+
+            <div class="row gx-4 gx-lg-5 pt-3 justify-content-center">
+
+                <div class="card col-lg-3-card pt-4 pb-4 mx-3 my-3 hr-line">
+
+                    <img class="card-img-top rounded-3" src="{% static 'odbc/assets/img/ministries/mens-ministry.jpeg' %}" alt="Card image" style="width:100%">
+
+                    <div class="card-body text-center">
+
+                      <h4 class="card-title pt-3">Work Title</h4>
+
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        READ MORE
+                      </button>
+
+                    </div>
+                </div>
+
+                <div class="modal" id="myModal">
+
+                    <div class="modal-dialog modal-dialog-centered">
+
+                        <div class="modal-content">
+                    
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                            <h4 class="modal-title">Work Title</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                    
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </div>
+                    
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                    
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="index-page-section bg-gradient-3 mt-5 pt-5">
+        
+        <div class="container px-4 px-lg-5">
+
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+
+                <div class="col-lg-8-homepage-logo align-self-end">
+
+                    <br/><br/>
+                    <img class="homepage-logo" src="{%static 'odbc/assets/img/home/bg-logo-low-opacity.png'%}" alt="open door believers chapel logo">
+                    <br/><br/><br/><br/>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+    </section>
+
+
     <!-- Upcoming Events -->
-    <section class="index-page-section" id="thisweek">
+    <section class="index-page-section bg-leaves" id="thisweek">
         
         <div class="container px-4 px-lg-5">
 
@@ -124,36 +279,36 @@
 
             {% if odbc_events%}
 
-            {% for odbc in odbc_events%}
+                {% for odbc in odbc_events%}
 
-                <div class="row mb-4 gx-4 gx-lg-5 justify-content-center">
-                
-                    <div class="col-lg-2 col-lg-2-custom text-center events-img">
-    
-                        <img class="events-img" src="{{odbc.event_image.url}}">
-    
-                    </div>
-    
-                    <div class="col-lg-4 event-col bg-light">
-    
-                        <div>
-    
-                            <span class="lg-p h1-color-2">{{ odbc.event_title}}</span>
-                            <p class="sl-p h1-color-1">
-                                {{ odbc.event_date}} - {{ odbc.event_time}} CST
-                            </p>
-    
-                            <p class="sl-p">
-                                {{ odbc.event_description}}
-                            </p>
-    
+                    <div class="row mb-4 gx-4 gx-lg-3 justify-content-center">
+                    
+                        <div class="col-lg-2 col-lg-2-custom text-center events-img">
+        
+                            <img class="events-img" src="{{odbc.event_image.url}}">
+        
                         </div>
-    
-                    </div>
-                
-                </div>
 
-            {% endfor %}
+                        <div class="col-lg-5 event-col bg-light vr-line">
+        
+                            <div>
+        
+                                <span class="lg-p h1-color-2">{{ odbc.event_title}}</span>
+                                <p class="sl-p h1-color-1">
+                                    {{ odbc.event_date}} - {{ odbc.event_time}} CST
+                                </p>
+        
+                                <p class="sl-p">
+                                    {{ odbc.event_description}}
+                                </p>
+        
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+                {% endfor %}
 
             {% else %}
 

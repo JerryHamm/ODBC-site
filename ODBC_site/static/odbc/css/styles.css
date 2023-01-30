@@ -248,9 +248,20 @@ padding-bottom: 1.5vw;
   font-weight: 300;
 }
 
-.lg-p-thin {
-  font-size: 2rem;
-  font-weight: 200;
+@media only screen and (min-width: 992px) {
+  .lg-p-thin {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+    
+}
+
+@media only screen and (max-width: 991px) {
+  .lg-p-thin {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+    
 }
 
 
@@ -261,6 +272,11 @@ padding-bottom: 1.5vw;
 
 .sm-p {
   font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.ft-p {
+  font-size: 1.12rem;
   font-weight: 300;
 }
 
@@ -303,8 +319,8 @@ padding-bottom: 1.5vw;
     linear-gradient(
       /* rgba(255, 0, 0, 0.45), 
       rgba(255, 0, 0, 0.45) */
-      rgba(255, 255, 255, 0.882), 
-      rgba(255, 255, 255, 0.424)
+      rgb(255, 255, 255), 
+      rgba(255, 255, 255, 0.461)
     ),
     url(../assets/img/backgrounds/leaves-background.png);
 }
@@ -325,14 +341,14 @@ padding-bottom: 1.5vw;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 #eca4058e;
+  box-shadow: 0 4px 8px 0 #07204f8e;
   transition: 0.3s;
   border-radius: 5px; /* 5px rounded corners */
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 #eca405a1;
+  box-shadow: 0 8px 16px 0 #07204fa1;
 }
 
 /* Add some padding inside the card container */
@@ -365,6 +381,21 @@ padding-bottom: 1.5vw;
 
 .bg-footer {
   background-color: #566F8E;
+}
+
+/* vertical rule */
+.vr-line {
+  border-left: 6px solid;
+  border-color: #eca405;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.hr-line {
+  border-top: 6px solid;
+  border-color: #eca405;
+  height: 100%;
+  border-radius: 5px;
 }
 
 /* CUSTOM STYLING END */
@@ -400,7 +431,7 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 500;
   line-height: 1.2;
 }
@@ -1577,6 +1608,57 @@ progress {
   }
 }
 
+@media only screen and (min-width: 800px) {
+  .col-lg-4-mod {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  .col-lg-4-mod-2 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  .col-lg-4-mod-last {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .col-lg-4-mod-last {
+    display: none;
+  }
+
+  .col-lg-4-mod {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-lg-4-mod-2 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+.col-lg-3-card {
+  flex: 0 0 auto;
+  width: 60%;
+}
+
+@media only screen and (max-width: 450px) {
+  .col-lg-4-mod-last {
+    display: none;
+  }
+
+  .col-lg-4-mod-2 {
+    display: none;
+  }
+
+  .col-lg-4-mod {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
 @media (min-width: 992px) {
   .col-lg {
     flex: 1 0 0%;
@@ -1625,6 +1707,11 @@ progress {
   .col-lg-1 {
     flex: 0 0 auto;
     width: 8.33333333%;
+  }
+
+  .col-lg-3-card {
+    flex: 0 0 auto;
+    width: 25%;
   }
 
   .col-lg-2 {
@@ -3298,7 +3385,7 @@ textarea.form-control-lg {
 
 .btn {
   display: inline-block;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -3325,10 +3412,7 @@ textarea.form-control-lg {
 .btn:hover {
   color: #212529;
 }
-.btn-check:focus + .btn, .btn:focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(244, 98, 58, 0.25);
-}
+
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {
   pointer-events: none;
   opacity: 0.65;
@@ -3363,7 +3447,6 @@ textarea.form-control-lg {
   background-color: #eca405;
   border-color: #eca405;
 }
-
 .btn-secondary {
   color: #fff;
   background-color: #07204f;
@@ -3374,12 +3457,7 @@ textarea.form-control-lg {
   background-color: #0b3178;
   border-color: #0b3178;
 }
-.btn-check:focus + .btn-secondary, .btn-secondary:focus {
-  color: #fff;
-  background-color: #07204f;
-  border-color: #07204f;
-  box-shadow: 0 0 0 0.25rem rgba(130, 138, 145, 0.5);
-}
+
 .btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
   color: #fff;
   background-color: #07204f;
@@ -3558,12 +3636,7 @@ textarea.form-control-lg {
   background-color: #6C839E;
   border-color: #6C839E;
 }
-.btn-check:focus + .btn-dark, .btn-dark:focus {
-  color: #fff;
-  background-color: #1c1f23;
-  border-color: #1a1e21;
-  box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
-}
+
 .btn-check:checked + .btn-dark, .btn-check:active + .btn-dark, .btn-dark:active, .btn-dark.active, .show > .btn-dark.dropdown-toggle {
   color: #fff;
   background-color: #1a1e21;
@@ -3571,11 +3644,6 @@ textarea.form-control-lg {
 }
 .btn-check:checked + .btn-dark:focus, .btn-check:active + .btn-dark:focus, .btn-dark:active:focus, .btn-dark.active:focus, .show > .btn-dark.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
-}
-.btn-dark:disabled, .btn-dark.disabled {
-  color: #fff;
-  background-color: #212529;
-  border-color: #212529;
 }
 
 .btn-outline-primary {
@@ -4090,7 +4158,7 @@ textarea.form-control-lg {
 
 .nav-dropdown-item-text {
   color: #000000;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   font-size: 0.9rem;
 }
@@ -7724,6 +7792,10 @@ textarea.form-control-lg {
   padding-top: 1.5rem !important;
 }
 
+.pt-4_5 {
+  padding-top: 2.5rem !important;
+}
+
 .pt-5 {
   padding-top: 3rem !important;
 }
@@ -7770,6 +7842,10 @@ textarea.form-control-lg {
 
 .pb-4 {
   padding-bottom: 1.5rem !important;
+}
+
+.pb-4_5 {
+  padding-bottom: 2.5rem !important;
 }
 
 .pb-5 {
@@ -8097,6 +8173,16 @@ textarea.form-control-lg {
 .bg-gradient {
   background: rgb(2,0,36);
   background: linear-gradient(159deg, rgba(2,0,36,1) 0%, rgba(7,32,79,1) 35%, rgba(236,164,5,1) 100%);
+}
+
+.bg-gradient-2 {
+  background: rgb(236,164,5);
+  background: linear-gradient(146deg, rgba(236,164,5,1) 0%, rgba(7,32,79,1) 100%);
+}
+
+.bg-gradient-3 {
+  background: rgb(7,32,79);
+  background: linear-gradient(146deg, rgba(7,32,79,1) 0%, rgba(236,164,5,1) 100%); 
 }
 
 .user-select-all {
@@ -11559,13 +11645,13 @@ hr.divider-light {
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #212529;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #6c757d;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:  "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   font-size: 0.75rem;
   padding: 0.75rem 0;
@@ -11588,7 +11674,7 @@ hr.divider-light {
     color: #fff;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
-    color: rgba(255, 255, 255, 0.7);
+    color: #fff;
     padding: 0 2.4rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -11694,7 +11780,7 @@ header.masthead h1, header.masthead .h1 {
 
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
