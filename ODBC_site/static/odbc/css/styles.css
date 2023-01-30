@@ -391,6 +391,13 @@ padding-bottom: 1.5vw;
   border-radius: 5px;
 }
 
+.hr-line {
+  border-top: 6px solid;
+  border-color: #eca405;
+  height: 100%;
+  border-radius: 5px;
+}
+
 /* CUSTOM STYLING END */
 
 
@@ -1632,6 +1639,11 @@ progress {
   }
 }
 
+.col-lg-3-card {
+  flex: 0 0 auto;
+  width: 60%;
+}
+
 @media only screen and (max-width: 450px) {
   .col-lg-4-mod-last {
     display: none;
@@ -1695,6 +1707,11 @@ progress {
   .col-lg-1 {
     flex: 0 0 auto;
     width: 8.33333333%;
+  }
+
+  .col-lg-3-card {
+    flex: 0 0 auto;
+    width: 25%;
   }
 
   .col-lg-2 {
@@ -3430,7 +3447,6 @@ textarea.form-control-lg {
   background-color: #eca405;
   border-color: #eca405;
 }
-
 .btn-secondary {
   color: #fff;
   background-color: #07204f;
@@ -3441,12 +3457,7 @@ textarea.form-control-lg {
   background-color: #0b3178;
   border-color: #0b3178;
 }
-.btn-check:focus + .btn-secondary, .btn-secondary:focus {
-  color: #fff;
-  background-color: #07204f;
-  border-color: #07204f;
-  box-shadow: 0 0 0 0.25rem rgba(130, 138, 145, 0.5);
-}
+
 .btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
   color: #fff;
   background-color: #07204f;
@@ -8165,8 +8176,13 @@ textarea.form-control-lg {
 }
 
 .bg-gradient-2 {
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,32,79,1) 35%, rgba(236,164,5,1) 100%);
+  background: rgb(236,164,5);
+  background: linear-gradient(146deg, rgba(236,164,5,1) 0%, rgba(7,32,79,1) 100%);
+}
+
+.bg-gradient-3 {
+  background: rgb(7,32,79);
+  background: linear-gradient(146deg, rgba(7,32,79,1) 0%, rgba(236,164,5,1) 100%); 
 }
 
 .user-select-all {
