@@ -7,97 +7,107 @@
 {% block body_block %}
 
     <!-- Masthead -->
-    <section class="page-section bg-ministry">
+    <section class="page-section bg-ministry" id="ministries">
             
+        <div class="container px-4 px-lg-5 text-white text-center">
+
+            <span class="ministry-masthead-space"><br/><br/><br/></span>
+            <h1 class="larger">Baptism Ministry</h1>
+
+        </div>
+
+    </section>
+
+
+    <!-- Baptism Ministry -->
+    <section class="page-section pb-5 pt-5"  >
+        
         <div class="container px-4 px-lg-5">
 
-            <div class="col-lg-8-homepage-logo align-self-center">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                
+                <div class="col-lg-10 text-blue pad">
 
-                <img class="homepage-logo" src="{%static 'odbc/assets/img/home/bg-logo.png'%}" alt="open door believers chapel logo">
+                    <p class="mb-4 lg-m"><b>
+                        The Open Door Believers Chapel baptismal class comprises of 5-6 weeks of 
+                        teaching and interactive sessions that seek to:</b>                       
+                    </p>
 
+                    <p class="lg-m"><b>
+
+                        •	Explain the basics of the Christian faith to persons who profess faith in Christ 
+                        Jesus and who would like to demonstrate this faith through the act of baptism.</b>
+
+                    </p>
+
+                    <p class="lg-m"><b>
+                        
+                        •	Make clear to those who are not sure, what it means to be saved by Christ.            
+                    </b></p>
+
+                    <p class="lg-m"><b>
+                        
+                        The classes generally take place on an annual basis between the 
+                        months of August and September. The following topics are dealt with each week:    
+
+                    </b></p>
+
+                    <p class="sl-p text-center"><b>
+                        
+                        What is Salvation? The story of our Redemption  
+                               
+                    </b></p>
+
+                    <p class="sl-p text-center"><b>
+                        
+                        The Christian Test 101 - (from Chuck Swindol)    
+                               
+                    </b></p>
+
+                    <p class="sl-p text-center"><b>
+                        
+                        Is baptism necessary?
+                               
+                    </b></p>
+
+                    <p class="sl-p text-center"><b>
+                        
+                        What is the Lords Supper?    
+                               
+                    </b></p>
+
+                    <p class="sl-p text-center"><b>
+                        
+                        An overview of the Church – Where do I fit in?  
+                               
+                    </b></p>
+
+                    <p class="sl-p text-center"><b>
+                        
+                        How to tell your story/testimony   
+                               
+                    </b></p>
+               
+                </div>
+            
             </div>
 
         </div>
 
     </section>
 
-    <!-- Baptism Ministry -->
-    <section class="page-section pb-5 pt-5 bg-leaves-reverse"  >
+
+    <!-- Ministry Photo Gallery-->
+    <section class="page-section bg-leaves pb-5 pt-0"  >
+
+        <h1 class="text-dark h1-add text-center text-white"><span class="h1-color-2">ODBC Baptism Photo Gallery</span></h1>
+        <hr class="divider"/>
         
         <div class="container px-4 px-lg-5">
 
-            <h1 class="mt-0 h1-add text-center">Baptism Ministry</h1>
-            <hr class="divider"/>
-
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                
-                <div class="col-lg-10 text-center pad">
-
-                    <p class="mb-4 lg-m">
-                        The Open Door Believers Chapel baptismal class comprises of 5-6 weeks of 
-                        teaching and interactive sessions that seek to:                       
-                    </p>
-               
-                </div>
-            
-            </div>
-
-
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                
-                <div class="col-lg-10 text-center pad">
-
-                    <p style="color: #dc5834;" class="lg-m">
-
-                        •	Explain the basics of the Christian faith to persons who profess faith in Christ 
-                        Jesus and who would like to demonstrate this faith through the act of baptism
-
-                        <br><br>
-                        
-                        •	Make clear to those who are not sure, what it means to be saved by Christ.              
-                    </p>
-               
-                </div>
-            
-            </div>
-
             <div class="row gx-4 gx-lg-5 pb-5 justify-content-center">
-                
-                <div class="col-lg-6 text-center">
 
-                    <p class="mb-0 lg-m">
-                        The classes generally take place on an annual basis between the 
-                        months of August and September. The following topics are dealt with each week:                       
-                    </p>
-
-                    <p style="color: #dc5834;" class="lg-m">
-
-                        What is Salvation? The story of our Redemption
-
-                        <br><br>
-                        
-                        The Christian Test 101 - (from Chuck Swindol)   
-
-                        <br><br>
-                        
-                        Is baptism necessary?
-
-                        <br><br>
-                        
-                        What is the Lords Supper? 
-
-                        <br><br>
-                        
-                        An overview of the Church – Where do I fit in?
-
-                        <br><br>
-                        
-                        How to tell your story/testimony
-                    </p>  
-               
-                </div>
-
-                <div class="col-lg-6 justify-content-center">
+                {% comment %} <div class="col-lg-6 justify-content-center">
                 
                     <!-- Carousel -->
                     <div id="ministries-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -141,6 +151,30 @@
                            
                     </div>
     
+                </div> {% endcomment %}
+
+                <div class="col-lg-6 text-center pad pb-5 mb-5">
+
+                    <span class="ministry-image-overlay">
+
+                        <img class="ministry-img-1 img-thumbnail" src="{%static 'odbc/assets/img/about/we-are-odbc/about-1.jpeg'%}" alt="pic of who we are">
+                        
+                        <img class="ministry-img-2 img-thumbnail" src="{%static 'odbc/assets/img/about/we-are-odbc/about-3.jpeg'%}" alt="pic of who we are">
+                    
+                    </span>
+               
+                </div>
+
+                <div class="col-lg-6 text-center pad pb-5 mb-5">
+
+                    <span class="ministry-image-overlay">
+
+                        <img class="ministry-img-3 img-thumbnail" src="{%static 'odbc/assets/img/about/we-are-odbc/about-1.jpeg'%}" alt="pic of who we are">
+                        
+                        <img class="ministry-img-4 img-thumbnail" src="{%static 'odbc/assets/img/about/we-are-odbc/about-2.jpeg'%}" alt="pic of who we are">
+                   
+                    </span>
+               
                 </div>
             
             </div>
