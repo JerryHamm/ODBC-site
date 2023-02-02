@@ -264,6 +264,10 @@ padding-bottom: 1.5vw;
     font-size: 2rem;
     font-weight: 200;
   }
+
+  .lg-p-anniversary {
+    font-size: 2.5rem;
+  }
     
 }
 
@@ -271,6 +275,10 @@ padding-bottom: 1.5vw;
   .lg-p-thin {
     font-size: 1.5rem;
     font-weight: 200;
+  }
+
+  .lg-p-anniversary {
+    font-size: 1.5rem;
   }
     
 }
@@ -284,6 +292,11 @@ padding-bottom: 1.5vw;
 .sm-p {
   font-size: 0.9rem;
   font-weight: 300;
+}
+
+.sm-p-footer {
+  font-size: 0.9rem;
+  font-weight: 100;
 }
 
 .ft-p {
@@ -306,6 +319,10 @@ padding-bottom: 1.5vw;
 
 .real-white {
   color: #fff;
+}
+
+#contact {
+  border-top: 10px solid #eca405;
 }
 
 .bg-about {
@@ -352,6 +369,183 @@ padding-bottom: 1.5vw;
 }
 /* _--------------------------------------------------------------------------- */
 
+
+/* Ministries Card css */
+.ministries-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+.ministries-card > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+hr.ministries-title-divider {
+  border-radius: 10px;
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 0rem 0rem 0.5rem 0rem;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  opacity: 1;
+}
+.ministries-card > .list-group {
+  border-top: inherit;
+  border-bottom: inherit;
+}
+.ministries-card > .list-group:first-child {
+  border-top-width: 0;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+.ministries-card > .list-group:last-child {
+  border-bottom-width: 0;
+  border-bottom-right-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
+.ministries-card > .ministries-card-header + .list-group,
+.ministries-card > .list-group + .ministries-card-footer {
+  border-top: 0;
+}
+
+.ministries-card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  background-color: #566f8e;
+  border-bottom-right-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.ministries-card-title {
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.ministries-card-subtitle {
+  margin-top: -0.25rem;
+  margin-bottom: 0;
+}
+
+.ministries-card-text {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.ministries-card-link + .ministries-card-link {
+  margin-left: 1rem;
+}
+
+.ministries-card-header {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.ministries-card-header:first-child {
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+.ministries-card-footer {
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+.ministries-card-footer:last-child {
+  border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+}
+
+.ministries-card-header-tabs {
+  margin-right: -0.5rem;
+  margin-bottom: -0.5rem;
+  margin-left: -0.5rem;
+  border-bottom: 0;
+}
+
+.ministries-card-header-pills {
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+}
+
+.ministries-card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  border-radius: calc(0.25rem - 1px);
+}
+
+.ministries-card-img,
+.ministries-card-img-top,
+.ministries-card-img-bottom {
+  width: 50%;
+}
+
+.ministries-card-img,
+.ministries-card-img-top {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.ministries-card-img,
+.ministries-card-img-bottom {
+  border-bottom-right-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
+
+.ministries-card-group > .ministries-card {
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 576px) {
+  .ministries-card-group {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .ministries-card-group > .ministries-card {
+    flex: 1 0 0%;
+    margin-bottom: 0;
+  }
+  .ministries-card-group > .ministries-card + .ministries-card {
+    margin-left: 0;
+    border-left: 0;
+  }
+  .ministries-card-group > .ministries-card:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .ministries-card-group > .ministries-card:not(:last-child) .ministries-card-img-top,
+.ministries-card-group > .ministries-card:not(:last-child) .ministries-card-header {
+    border-top-right-radius: 0;
+  }
+  .ministries-card-group > .ministries-card:not(:last-child) .ministries-card-img-bottom,
+.ministries-card-group > .ministries-card:not(:last-child) .ministries-card-footer {
+    border-bottom-right-radius: 0;
+  }
+  .ministries-card-group > .ministries-card:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .ministries-card-group > .ministries-card:not(:first-child) .ministries-card-img-top,
+.ministries-card-group > .ministries-card:not(:first-child) .ministries-card-header {
+    border-top-left-radius: 0;
+  }
+  .ministries-card-group > .ministries-card:not(:first-child) .ministries-card-img-bottom,
+.ministries-card-group > .ministries-card:not(:first-child) .ministries-card-footer {
+    border-bottom-left-radius: 0;
+  }
+}
+
+
+
 /* _--------------------------------------------------------------------------- */
 
 .card {
@@ -380,7 +574,7 @@ padding-bottom: 1.5vw;
 }
 
 /* styling card text */
-.card-container > p{
+.card-container > p {
   font-size: 1.5vw;
 }
 
@@ -392,6 +586,10 @@ padding-bottom: 1.5vw;
     
 }
 
+
+.bg-sub-footer {
+  background-color: #6C839E;
+}
 
 .bg-footer {
   background-color: #566F8E;
@@ -896,8 +1094,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
+  background-color: #92989e;
   border-radius: 0.25rem;
   max-width: 100%;
   height: auto;
@@ -971,6 +1168,22 @@ progress {
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+.ministries-row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.ministries-row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
   margin-top: var(--bs-gutter-y);
 }
 
@@ -1639,7 +1852,7 @@ progress {
 }
 
 @media only screen and (min-width: 800px) {
-  .col-lg-4-mod {
+  .col-lg-4-mod-3 {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
@@ -1648,6 +1861,11 @@ progress {
     width: 33.33333333%;
   }
   .col-lg-4-mod-last {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .col-lg-4-mod-3 {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
@@ -1664,6 +1882,11 @@ progress {
   }
 
   .col-lg-4-mod-2 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-lg-4-mod-3 {
     flex: 0 0 auto;
     width: 50%;
   }
@@ -3627,19 +3850,19 @@ textarea.form-control-lg {
 }
 
 .btn-light {
-  color: #000;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  color: #fff;
+  background-color: #00b359;
+  border-color: #00b359;
 }
 .btn-light:hover {
-  color: #000;
-  background-color: #f9fafb;
-  border-color: #f9fafb;
+  color: #fff;
+  background-color: #01994d;
+  border-color: #01994d;
 }
 .btn-check:focus + .btn-light, .btn-light:focus {
-  color: #000;
-  background-color: #f9fafb;
-  border-color: #f9fafb;
+  color: #fff;
+  background-color: #00b35acb;
+  border-color: #00b35abb;
   box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5);
 }
 .btn-check:checked + .btn-light, .btn-check:active + .btn-light, .btn-light:active, .btn-light.active, .show > .btn-light.dropdown-toggle {
@@ -8079,6 +8302,10 @@ textarea.form-control-lg {
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-blue {
+  color: #07204f;
+}
+
 .text-body {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
@@ -8152,7 +8379,7 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #f2f5f7;/* background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important; */
 }
 
 .bg-dark {
@@ -8201,13 +8428,15 @@ textarea.form-control-lg {
 }
 
 .bg-gradient {
-  background: rgb(2,0,36);
-  background: linear-gradient(159deg, rgba(2,0,36,1) 0%, rgba(7,32,79,1) 35%, rgba(236,164,5,1) 100%);
+  background-color: #07204f;
 }
 
-.bg-gradient-2 {
-  background: rgb(236,164,5);
-  background: linear-gradient(146deg, rgba(236,164,5,1) 0%, rgba(7,32,79,1) 100%);
+.bg-anniversary {
+  background: url("../assets/img/home/ODBC_25YearsBanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 .bg-gradient-3 {
@@ -11708,7 +11937,7 @@ hr.divider-light {
     padding: 0 2.4rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fff;
+    color: #eca405;
   }
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
@@ -11730,6 +11959,10 @@ hr.divider-light {
     color: #eca405;
   }
 }
+#home {
+  border-bottom: 10px solid #eca405;
+}
+
 
 header.masthead {
   padding-top: 10rem;
