@@ -7,45 +7,27 @@
 {% block body_block %}
 
     <!-- Masthead -->
-    <section class="page-section bg-ministry">
+    <section class="page-section bg-ministry-women" id="ministries">
             
-        <div class="container px-4 px-lg-5">
+        <div class="container px-4 px-lg-5 text-white text-center">
 
-            <div class="col-lg-8-homepage-logo align-self-center">
-
-                <img class="homepage-logo" src="{%static 'odbc/assets/img/home/bg-logo.png'%}" alt="open door believers chapel logo">
-
-            </div>
+            <span class="ministry-masthead-space"><br/><br/><br/></span>
+            <h1 class="larger">Women's Ministry</h1>
 
         </div>
 
     </section>
 
     <!-- Womens Ministry -->
-    <section class="page-section pb-5 pt-5 bg-leaves"  >
+    <section class="page-section pb-5 pt-5"  >
         
         <div class="container px-4 px-lg-5">
 
-            <h1 class="mt-0 h1-add text-center">Womens Ministry</h1>
-            <hr class="divider"/>
-            
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 
-                <div class="col-lg-10 text-center pad">
+                <div class="col-lg-10">
 
-                    <p class="lg-p">
-                        Sisters Ministry of ODBC                        
-                    </p>
-               
-                </div>
-            
-            </div>
-
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                
-                <div class="col-lg-10 text-center pad">
-
-                    <p class="mb-4 lg-m">
+                    <p class="mb-4 lg-p text-blue">
                         The Sisters Ministry of ODBC started soon after the church was established with a 
                         Retreat for Ladies of the church in Camalote, Cayo. This retreat has become the 
                         highlight of the year as it is now eagerly anticipated by the Ladies of ODBC and 
@@ -57,7 +39,7 @@
                         held in October 2012, there were many examples of three generations of women present – Remarkable.                     
                     </p>
 
-                    <p class="mb-4 lg-m">
+                    <p class="mb-4 lg-p text-blue">
                         The Sisters Ministry is designed to create fellowship, bond and support for all the ladies at ODBC. 
                         The Ministry is led by the Ladies Committee, a dynamic team which still boasts three of its original members.                  
                     </p>
@@ -65,12 +47,19 @@
                 </div>
             
             </div>
+        </div>
 
-            <div class="row gx-4 gx-lg-5 pt-5 pb-5 justify-content-center">
+    </section>
+
+    <section class="page-section mt-4 pt-2 pb-4">
+        
+        <div class="container px-4 px-lg-5">
+          
+            <div class="row gx-4 gx-lg-5 justify-content-center">
                 
-                <div class="col-lg-6 text-center">
+                <div class="col-lg-5 text-blue pad">
 
-                    <p class="lg-m">
+                    <p class="lg-p">
 
                         The annual retreat is just one of the many events organized by the Ladies Ministry. 
                         The Annual Valentine affair which evolved from a social to an exquisite banquet 
@@ -83,7 +72,86 @@
                
                 </div>
 
-                <div class="col-lg-6 justify-content-center">
+                <div class="col-lg-6 text-center pad pb-5 mb-5">
+
+                    <span class="ministry-image-overlay">
+
+                        <img class="ministry-img-1 img-thumbnail" src="{%static 'odbc/assets/img/ministries/women/1.jpeg'%}" alt="pic of who we are">
+                        
+                        <img class="ministry-img-2 img-thumbnail" src="{%static 'odbc/assets/img/ministries/women/2.jpeg'%}" alt="pic of who we are">
+                    
+                    </span>
+               
+                </div>
+                        
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="page-section pb-5 pt-0"  >
+        
+        <div class="container px-4 px-lg-5">
+
+            <div class="row gx-4 gx-lg-5 pt-5 justify-content-center">
+                
+                <div class="col-lg-10 pad">
+
+                    <p class="lg-p">
+
+                        <i class="bi bi-bookmark-plus-fill bookmark-fill">
+                            <span class="text-blue">
+                                The Ladies Ministry also organizes baby showers for mothers expecting their first 
+                                baby and wedding showers for ladies engaged to be married. These are events where 
+                                the wisdom of those who have traveled these roads before are shared, and encouragement 
+                                given for the new venture.
+                            </span>
+                        </i> 
+
+                    </p>
+
+                    <p class="lg-p">
+                        <i class="bi bi-bookmark-plus-fill bookmark-fill">
+                            <span class="text-blue">
+                                    The Ladies Ministry is a dynamic organization that thinks outside of the box, so some 
+                            of the activities in the past have included Pizza night, Movie night, Christmas socials, 
+                            Trips to Chetumal, Games evening, an annual Tea Party, Bring and Buy Sale, Bible Study,
+                            Health talks and Health Tests, and Sharing The monthly Ladies’ Meeting takes place at
+                            <span style="color: #ECA405;">
+                                My Father’s House 33 Central American Blvd Belize City, Belize                
+                            </span> 
+                            </span>
+                        </i> 
+                    </p>
+
+                    <p class="lg-p">
+
+                        <i class="bi bi-bookmark-plus-fill bookmark-fill">
+                            <span class="text-blue">
+                                You are all invited (only If you have XX chromosomes) to take some time out to relax 
+                                and have fun and fellowship with the sisters of ODBC.
+                            </span>
+                        </i> 
+
+                    </p>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+    </section>
+
+     <!-- Ministry Photo Gallery-->
+     <section class="page-section bg-leaves pb-7 pt-0"  >
+        
+        <div class="container px-4 px-lg-5">
+
+            <div class="row gx-4 gx-lg-5 pb-5 justify-content-center">
+
+                {% comment %} <div class="col-lg-6 justify-content-center">
                 
                     <!-- Carousel -->
                     <div id="ministries-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -127,49 +195,29 @@
                            
                     </div>
     
-                </div>
-            
-            </div>
+                </div> {% endcomment %}
 
-            <div class="row gx-4 gx-lg-5 pt-5 justify-content-center">
-                
-                <div class="col-lg-10 text-center pad">
+                <div class="col-lg-6 text-center pad pb-5 mb-5">
 
-                    <p class="lg-m">
+                    <span class="ministry-image-overlay">
 
-                        The Ladies Ministry also organizes baby showers for mothers expecting their first 
-                        baby and wedding showers for ladies engaged to be married. These are events where 
-                        the wisdom of those who have traveled these roads before are shared, and encouragement 
-                        given for the new venture.    
-
-                    </p>
-
-                    <p class="lg-m">
-
-                        The Ladies Ministry is a dynamic organization that thinks outside of the box, so some 
-                        of the activities in the past have included Pizza night, Movie night, Christmas socials, 
-                        Trips to Chetumal, Games evening, an annual Tea Party, Bring and Buy Sale, Bible Study,
-                        Health talks and Health Tests, and Sharing The monthly Ladies’ Meeting takes place at
-                        <span style="color: #dc5834;">
-                            My Father’s House 33 Central American Blvd Belize City, Belize                
-                        </span>   
-
-                    </p>
+                        <img class="ministry-img-1 img-thumbnail" src="{%static 'odbc/assets/img/ministries/women/3.jpeg'%}" alt="pic of who we are">
+                        
+                        <img class="ministry-img-2 img-thumbnail" src="{%static 'odbc/assets/img/ministries/women/4.jpeg'%}" alt="pic of who we are">
+                    
+                    </span>
                
                 </div>
-            
-            </div>
 
-            <div class="row gx-4 gx-lg-5 pt-5 justify-content-center">
-                
-                <div class="col-lg-10 text-center pad">
+                <div class="col-lg-6 text-center pad pb-5 mb-5">
 
-                    <p style="color: #dc5834;" class="mb-4 lg-m">
+                    <span class="ministry-image-overlay">
 
-                        You are all invited (only If you have XX chromosomes) to take some time out to relax 
-                        and have fun and fellowship with the sisters of ODBC.
-                 
-                    </p>
+                        <img class="ministry-img-3 img-thumbnail" src="{%static 'odbc/assets/img/ministries/women/5.jpeg'%}" alt="pic of who we are">
+                        
+                        <img class="ministry-img-4 img-thumbnail" src="{%static 'odbc/assets/img/ministries/women/6.jpeg'%}" alt="pic of who we are">
+                    
+                    </span>
                
                 </div>
             
@@ -178,5 +226,6 @@
         </div>
 
     </section>
+
 
 {% endblock  %}

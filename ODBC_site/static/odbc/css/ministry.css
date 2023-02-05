@@ -1,4 +1,4 @@
-.bg-ministry {
+.bg-ministry-baptism {
   background-image: 
     linear-gradient(
       /* rgba(255, 0, 0, 0.45), 
@@ -12,7 +12,134 @@
       rgba(7, 32, 79, 0.848), 
       rgba(7, 32, 79, 0.696)
     ),
-    url(../assets/img/ministries/bg-masthead.jpg);
+    url(../assets/img/ministries/bg-masthead-baptism.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.bg-ministry-camp {
+  background-image: 
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(7, 32, 79, 0.545), 
+      rgba(7, 32, 79, 0.448)
+    ),
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(7, 32, 79, 0.848), 
+      rgba(7, 32, 79, 0.696)
+    ),
+    url(../assets/img/ministries/bg-masthead-camp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.bg-ministry-children {
+  background-image: 
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(7, 32, 79, 0.545), 
+      rgba(7, 32, 79, 0.448)
+    ),
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(7, 32, 79, 0.848), 
+      rgba(7, 32, 79, 0.696)
+    ),
+    url(../assets/img/ministries/bg-masthead-children.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.bg-ministry-girls {
+  background-image: 
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(7, 32, 79, 0.545), 
+      rgba(7, 32, 79, 0.448)
+    ),
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(7, 32, 79, 0.848), 
+      rgba(7, 32, 79, 0.696)
+    ),
+    url(../assets/img/ministries/bg-masthead-girls.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.bg-ministry-men{
+  background-image: 
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(7, 32, 79, 0.545), 
+      rgba(7, 32, 79, 0.448)
+    ),
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(7, 32, 79, 0.848), 
+      rgba(7, 32, 79, 0.696)
+    ),
+    url(../assets/img/ministries/bg-masthead-men.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+.bg-ministry-mentorship {
+  background-image: 
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(7, 32, 79, 0.545), 
+      rgba(7, 32, 79, 0.448)
+    ),
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(7, 32, 79, 0.848), 
+      rgba(7, 32, 79, 0.696)
+    ),
+    url(../assets/img/ministries/bg-masthead-mentorship.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.bg-ministry-women {
+  background-image: 
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(7, 32, 79, 0.545), 
+      rgba(7, 32, 79, 0.448)
+    ),
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(7, 32, 79, 0.848), 
+      rgba(7, 32, 79, 0.696)
+    ),
+    url(../assets/img/ministries/bg-masthead-women.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

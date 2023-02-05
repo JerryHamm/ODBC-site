@@ -101,6 +101,10 @@
   }
 }
 
+.bookmark-fill {
+  color: #eca405;
+}
+
 .events-img {
   width: 100%;
   height: 100%;
@@ -152,10 +156,12 @@ padding-bottom: 1.5vw;
 
 .h1-color-1 {
   color: #eca405;
+  font-weight: lighter;
 }
 
 .h1-color-2 {
   color: #07204f;
+  font-weight: lighter;
 }
 
 .content-animation {
@@ -311,10 +317,6 @@ padding-bottom: 1.5vw;
 
 .phone {
   color: #0d6efd;
-}
-
-.h1-add {
-  font-weight: bold;
 }
 
 .real-white {
@@ -660,7 +662,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: "delimax", "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 500;
+  font-weight: lighter;
   line-height: 1.2;
 }
 
@@ -8103,6 +8105,14 @@ textarea.form-control-lg {
 
 .pb-5 {
   padding-bottom: 3rem !important;
+}
+
+.pb-6 {
+  padding-bottom: 6rem !important;
+}
+
+.pb-7 {
+  padding-bottom: 12rem !important;
 }
 
 .ps-0 {

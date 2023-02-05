@@ -7,46 +7,149 @@
 {% block body_block %}
 
     <!-- Masthead -->
-    <section class="page-section bg-ministry">
+    <section class="page-section bg-ministry-men" id="ministries">
             
+        <div class="container px-4 px-lg-5 text-white text-center">
+
+            <span class="ministry-masthead-space"><br/><br/><br/></span>
+            <h1 class="larger">Mens Ministry</h1>
+
+        </div>
+
+    </section>
+
+
+    <!-- Mens Ministry -->
+    <section class="page-section pb-5 pt-5"  >
+        
         <div class="container px-4 px-lg-5">
 
-            <div class="col-lg-8-homepage-logo align-self-center">
+            <div class="row gx-4 gx-lg-5 pt-5 justify-content-center">
+                
+                <div class="col-lg-10 pad">
 
-                <img class="homepage-logo" src="{%static 'odbc/assets/img/home/bg-logo.png'%}" alt="open door believers chapel logo">
 
+                    <p class="mb-4 lg-p text-blue">
+                        Our monthly men’s ministry is held on the Friday preceding Lord’s Supper at 7:00pm. 
+                        This meeting is our disciple training program. Although it is for men, this ministry 
+                        is a family effort in every way, as women and wives prepare a hearty meal and a snack. 
+                        Our men’s ministry is considered to be one of the most important of all ministries; 
+                        therefore, all male members are expected to attend.                      
+                    </p>
+
+                    <p class="mb-4 lg-p text-blue">
+
+                        Each 3-hour session is divided into sections that clearly define 
+                        its purpose in fulfilling vital learning experiences for men: 
+
+                    </p>
+
+                    <p class="mb-4 lg-p text-blue">
+
+                        This ministry is headed by our highly trained and experienced leadership team of Elders.
+
+                    </p>
+               
+                </div>
+
+                <div class="col-lg-10 text-center pad">
+
+                    <p class="mb-4 lg-p text-blue">
+
+                        <i class="bi bi-bookmark-plus-fill bookmark-fill">
+                            <span class="text-blue">
+                                For Fellowship
+                            </span>
+                        </i>
+
+                        <br><br>
+
+                        <i class="bi bi-bookmark-plus-fill bookmark-fill">
+                            <span class="text-blue">
+                                To Foster:
+                            </span>
+                        </i>
+
+                        <br>
+                            <span class="lg-m text-blue">
+                                <i>
+                                    <span class="text-blue">
+                                        a.	Spontaneous discussion
+                                    </span>
+                                </i>  
+                                
+                                <br>
+
+                                <i>
+                                    <span class="text-blue">
+                                        b.	Answer questions
+                                    </span>
+                                </i> 
+                                
+                                <br>
+
+                                <i>
+                                    <span class="text-blue">
+                                        c.	And encourage shared experiences
+                                    </span>
+                                </i>  
+                                
+                            </span>
+
+                        <br><br>
+
+                        <i class="bi bi-bookmark-plus-fill bookmark-fill">
+                            <span class="text-blue">
+                                To Facilitate Biblical Teaching on:
+                            </span>
+                        </i>
+
+                        <br>
+
+                        <span class="lg-m text-blue">
+                            <i>
+                                <span class="text-blue">
+                                    a.	Relational Matters
+                                </span>
+                            </i>  
+                            
+                            <br>
+
+                            <i>
+                                <span class="text-blue">
+                                    b.	Communal Matters
+                                </span>
+                            </i> 
+                            
+                            <br>
+
+                            <i>
+                                <span class="text-blue">
+                                    c.	Doctrinal Matters
+                                </span>
+                            </i>  
+                            
+                        </span>
+
+                    </p>
+               
+                </div>
+            
             </div>
 
         </div>
 
     </section>
 
-    <!-- Mens Ministry -->
-    <section class="page-section pb-5 pt-5 bg-leaves"  >
+
+    <!-- Ministry Photo Gallery-->
+    <section class="page-section bg-leaves pb-6 pt-0"  >
         
         <div class="container px-4 px-lg-5">
 
-            <h1 class="mt-0 h1-add text-center">Mens Ministry</h1>
-            <hr class="divider"/>
+            <div class="row gx-4 gx-lg-5 pb-5 justify-content-center">
 
-            <div class="row gx-4 gx-lg-5 pt-5 pb-5 justify-content-center">
-                
-                <div class="col-lg-6 text-center">
-
-                    <p class="lg-m">
-
-                        Our monthly men’s ministry is held on the Friday preceding Lord’s Supper at 7:00pm. 
-                        This meeting is our disciple training program. Although it is for men, this ministry 
-                        is a family effort in every way, as women and wives prepare a hearty meal and a snack. 
-                        Our men’s ministry is considered to be one of the most important of all ministries; 
-                        therefore, all male members are expected to attend.
-
-
-                    </p>
-               
-                </div>
-
-                <div class="col-lg-6 justify-content-center">
+                {% comment %} <div class="col-lg-6 justify-content-center">
                 
                     <!-- Carousel -->
                     <div id="ministries-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -90,59 +193,29 @@
                            
                     </div>
     
+                </div> {% endcomment %}
+
+                <div class="col-lg-6 text-center pad pb-5 mb-5">
+
+                    <span class="ministry-image-overlay">
+
+                        <img class="ministry-img-1 img-thumbnail" src="{%static 'odbc/assets/img/ministries/men/1.jpeg'%}" alt="pic of who we are">
+                        
+                        <img class="ministry-img-2 img-thumbnail" src="{%static 'odbc/assets/img/ministries/men/2.jpeg'%}" alt="pic of who we are">
+                    
+                    </span>
+               
                 </div>
-            
-            </div>
 
-            <div class="row gx-4 gx-lg-5 pt-5 justify-content-center">
-                
-                <div class="col-lg-10 text-center pad">
+                <div class="col-lg-6 text-center pad pb-5 mb-5">
 
-                    <p class="lg-m">
+                    <span class="ministry-image-overlay">
 
-                        Each 3-hour session is divided into sections that clearly define 
-                        its purpose in fulfilling vital learning experiences for men: 
-
-                    </p>
-
-                    <p style="color: #dc5834;" class="lg-m">
-
-                        1.	For Fellowship
-
-                        <br><br>
-
-                        2.	To Foster:
-
-                        <br>
-                            <span class="sl-p text-black">
-                                a.	Spontaneous discussion
-                                <br>
-                                b.	Answer question
-                                <br>
-                                c.	And encourage shared experiences, and
-                            </span>
-
-                        <br><br>
-
-                        3.	To Facilitate Biblical teaching on
-
-                        <br>
-                            <span class="sl-p text-black">
-                                a.	Relational matters
-                                <br>
-                                b.	Communal matters
-                                <br>
-                                c.	Doctrinal matters
-                            </span>
-
-
-                    </p>
-
-                    <p style="color: #dc5834;" class="lg-m">
-
-                        This ministry is headed by our highly trained and experienced leadership team of Elders.
-
-                    </p>
+                        <img class="ministry-img-3 img-thumbnail" src="{%static 'odbc/assets/img/ministries/men/3.jpeg'%}" alt="pic of who we are">
+                        
+                        <img class="ministry-img-4 img-thumbnail" src="{%static 'odbc/assets/img/ministries/men/4.jpeg'%}" alt="pic of who we are">
+                   
+                    </span>
                
                 </div>
             

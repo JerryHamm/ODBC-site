@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
    
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link rel="stylesheet" href="{%static 'odbc/css/style.css'%}" />
+    <link rel="stylesheet" href="{%static 'odbc/css/styles.css'%}" />
 
     <!-- Delimax font -->
     <style>
@@ -49,7 +49,7 @@
     {% if style_name == 'about' %}
 
         <!-- about page stylesheet -->
-        <link href="{%static 'odbc/css/abouts.css'%}" rel="stylesheet" />
+        <link href="{%static 'odbc/css/about.css'%}" rel="stylesheet" />
 
     {% elif style_name == 'announcements' %}
 
@@ -148,13 +148,13 @@
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                <a class="dropdown-item dropdown-item-line nav-dropdown-item-text" href="{% url 'baptism' %}" id="nav-dropdown-item-1">Baptism Ministry</a>
-                                <a class="dropdown-item dropdown-item-line nav-dropdown-item-text" href="{% url 'mens' %}" id="nav-dropdown-item-2">Men's Ministry</a>
-                                <a class="dropdown-item dropdown-item-line nav-dropdown-item-text" href="{% url 'womens' %}" id="nav-dropdown-item-3">Women's Ministry</a>
-                                <a class="dropdown-item dropdown-item-line nav-dropdown-item-text" href="{% url 'mentorship' %}" id="nav-dropdown-item-4">Mentorship Ministry</a>
+                                {% comment %} <a class="dropdown-item dropdown-item-line nav-dropdown-item-text" href="{% url 'baptism' %}" id="nav-dropdown-item-1">Baptism Ministry</a> {% endcomment %}
                                 <a class="dropdown-item dropdown-item-line nav-dropdown-item-text" href="{% url 'camp' %}" id="nav-dropdown-item-5">Camping Ministry</a>
                                 <a class="dropdown-item dropdown-item-line nav-dropdown-item-text" href="{% url 'children' %}" id="nav-dropdown-item-6">Children's Ministry</a>
-                                <a class="dropdown-item nav-dropdown-item-text" href="{% url 'girls' %}" id="nav-dropdown-item-7">Girls Club</a>
+                                <a class="dropdown-item dropdown-item-line nav-dropdown-item-text" href="{% url 'girls' %}" id="nav-dropdown-item-7">God's Girls Club</a>
+                                <a class="dropdown-item dropdown-item-line nav-dropdown-item-text" href="{% url 'mens' %}" id="nav-dropdown-item-2">Men's Ministry</a>
+                                <a class="dropdown-item dropdown-item-line nav-dropdown-item-text" href="{% url 'mentorship' %}" id="nav-dropdown-item-4">Mentorship Ministry</a>
+                                <a class="dropdown-item nav-dropdown-item-text" href="{% url 'womens' %}" id="nav-dropdown-item-3">Women's Ministry</a>
 
                             </div>
 
