@@ -7,37 +7,32 @@
 {% block body_block %}
 
     <!-- Masthead -->
-    <section class="page-section bg-ministry">
+    <section class="page-section bg-ministry-girls" id="ministries">
             
-        <div class="container px-4 px-lg-5">
+        <div class="container px-4 px-lg-5 text-white text-center">
 
-            <div class="col-lg-8-homepage-logo align-self-center">
-
-                <img class="homepage-logo" src="{%static 'odbc/assets/img/home/bg-logo.png'%}" alt="open door believers chapel logo">
-
-            </div>
+            <span class="ministry-masthead-space"><br/><br/><br/></span>
+            <h1 class="larger">God's Girls Club</h1>
 
         </div>
 
     </section>
 
+
     <!-- girls club -->
-    <section class="page-section pb-5 pt-5 bg-leaves"  >
+    <section class="page-section pb-5 pt-5"  >
         
         <div class="container px-4 px-lg-5">
 
-            <h1 class="mt-0 h1-add text-center">Girls Club</h1>
-            <hr class="divider"/>
             
             <div class="row gx-4 gx-lg-5 pt-5 pb-5 justify-content-center">
                 
                 <div class="col-lg-6 text-center">
 
-                    <p class="lg-p">
-                        Motto                      
-                    </p>
+                    <h1 class="mt-0 text-center">Motto</h1>
+                    <hr class="divider"/>
 
-                    <p class="lg-m">
+                    <p class="lg-p text-blue">
 
                         As God’s Girl, I pledge to learn to live for Christ in every part of my life; 
                         I commit my mind to knowledge and understanding, my hands to useful skills, 
@@ -50,11 +45,10 @@
 
                 <div class="col-lg-6 text-center">
 
-                    <p class="lg-p">
-                        Vision                      
-                    </p>
+                    <h1 class="mt-0 text-center">Vison</h1>
+                    <hr class="divider"/>
                 
-                    <p class="lg-m">
+                    <p class="lg-p text-blue">
 
                         As God’s Girl, I pledge to learn to live for Christ in every part of my life; 
                         I commit my mind to knowledge and understanding, my hands to useful skills, 
@@ -71,11 +65,10 @@
 
                 <div class="col-lg-6 text-center">
 
-                    <p class="lg-p">
-                        Pledge                      
-                    </p>
+                    <h1 class="mt-0 text-center">Pledge</h1>
+                    <hr class="divider"/>
 
-                    <p class="lg-m">
+                    <p class="lg-p text-blue">
 
                         As God’s Girl, I pledge to learn to live for Christ in every part of my life; 
                         I commit my mind to knowledge and understanding, my hands to useful skills, 
@@ -88,9 +81,19 @@
             
             </div>
 
-            <div class="row gx-4 gx-lg-5 pt-5 pb-5 justify-content-center">
+        </div>
 
-                <div class="col-lg-10 justify-content-center">
+    </section>
+
+
+    <!-- Ministry Photo Gallery-->
+    <section class="page-section pb-6 pt-0"  >
+        
+        <div class="container px-4 px-lg-5">
+
+            <div class="row gx-4 gx-lg-5 pb-5 justify-content-center">
+
+                {% comment %} <div class="col-lg-6 justify-content-center">
                 
                     <!-- Carousel -->
                     <div id="ministries-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -134,26 +137,81 @@
                            
                     </div>
     
+                </div> {% endcomment %}
+
+                <div class="col-lg-6 text-center pad pb-5 mb-5">
+
+                    <span class="ministry-image-overlay">
+
+                        <img class="ministry-img-1 img-thumbnail" src="{%static 'odbc/assets/img/ministries/girls/1.jpeg'%}" alt="pic of who we are">
+                        
+                        <img class="ministry-img-2 img-thumbnail" src="{%static 'odbc/assets/img/ministries/girls/2.jpeg'%}" alt="pic of who we are">
+                    
+                    </span>
+               
+                </div>
+
+                <div class="col-lg-6 text-center pad pb-5 mb-5">
+
+                    <span class="ministry-image-overlay">
+
+                        <img class="ministry-img-3 img-thumbnail" src="{%static 'odbc/assets/img/ministries/girls/3.jpeg'%}" alt="pic of who we are">
+                        
+                        <img class="ministry-img-4 img-thumbnail" src="{%static 'odbc/assets/img/ministries/girls/4.jpeg'%}" alt="pic of who we are">
+                   
+                    </span>
+               
                 </div>
             
             </div>
 
+        </div>
+
+    </section>
+
+
+    <!-- girls club -->
+    <section class="page-section pb-5 pt-0 bg-leaves"  >
+        
+        <div class="container px-4 px-lg-5">
+
             <div class="row gx-4 gx-lg-5 pt-5 justify-content-center">
                 
-                <div class="col-lg-10 text-center pad">
+                <div class="col-lg-10 pad">
                     <br>
-                    <p class="mb-4 lg-m">
-                        As leaders of God’s Girls Club, we try to exemplify and live out the command of God given in Titus 2 to teach the younger women what is good.                   
+
+                    <p class="lg-p">
+
+                        <i class="bi bi-bookmark-plus-fill bookmark-fill">
+                            <span class="text-blue">
+                                As leaders of God’s Girls Club, we try to exemplify and live out the command of God given in Titus 2 to 
+                                teach the younger women what is good.
+                            </span>
+                        </i> 
+
                     </p>
 
-                    <p class="mb-4 lg-m">
-                        At ODBC, we have many young girls and older girls in need of Godly guidance, mentoring, and practical everyday teaching. About twenty 
-                        five girls meet the first Saturday of each month for different sessions and activities.                 
+                    <p class="lg-p">
+
+                        <i class="bi bi-bookmark-plus-fill bookmark-fill">
+                            <span class="text-blue">
+                                At ODBC, we have many young girls and older girls in need of Godly guidance, mentoring, and 
+                                practical everyday teaching. About twenty 
+                                five girls meet the first Saturday of each month for different sessions and activities.
+                            </span>
+                        </i> 
+
                     </p>
 
-                    <p class="mb-4 lg-m">
-                        As leaders, our hearts yearn to see each young girl grow in the wisdom and love of Jesus. We want to see each young 
-                        girl be a woman of noble character, a woman who is faithful, a woman who can provide for her family – a Godly woman.               
+                    <p class="lg-p">
+
+                        <i class="bi bi-bookmark-plus-fill bookmark-fill">
+                            <span class="text-blue">
+                                As leaders, our hearts yearn to see each young girl grow in the wisdom and love of Jesus. We want to see each young 
+                                girl be a woman of noble character, a woman who is faithful, a woman who can provide for her family – a Godly woman. 
+                            </span>
+                        </i> 
+
                     </p>
                
                 </div>
@@ -162,25 +220,16 @@
 
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 
-                <div class="col-lg-10 text-center pad">
+                <div class="col-lg-10 pad">
 
-                    <p style="color: #dc5834;" class="mb-4 lg-m">
-
-                        Pray with us as we work for His glory.
-                 
+                    <p class="mb-4 lg-p text-blue">
+                        Pray with us as we work for His glory.                      
                     </p>
 
-                    <p style="color: #dc5834;" class="mb-4 lg-m">
-
-                        Leaders of God’s Girls Club:
-                 
-                    </p>
-
-                    <p style="color: #dc5834;" class="mb-4 lg-m">
-
+                    <p class="mb-4 lg-p text-blue">
+                        Leaders of God’s Girls Club: <br/> 
                         Nicole Bembridge, Stasia Scott, Shanika Matura, Kellie Conserve, 
-                        Michelle Andrews, Mavrine Wesbey, Shawn Gillett, Charnelle Hyde
-                 
+                        Michelle Andrews, Mavrine Wesbey, Shawn Gillett, Charnelle Hyde                    
                     </p>
                
                 </div>

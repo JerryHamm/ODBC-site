@@ -7,58 +7,76 @@
 {% block body_block %}
 
     <!-- Masthead -->
-    <section class="page-section bg-ministry">
+    <section class="page-section bg-ministry-mentorship" id="ministries">
             
-        <div class="container px-4 px-lg-5">
+        <div class="container px-4 px-lg-5 text-white text-center">
 
-            <div class="col-lg-8-homepage-logo align-self-center">
-
-                <img class="homepage-logo" src="{%static 'odbc/assets/img/home/bg-logo.png'%}" alt="open door believers chapel logo">
-
-            </div>
+            <span class="ministry-masthead-space"><br/><br/><br/></span>
+            <h1 class="larger">Mentorship Ministry</h1>
 
         </div>
 
     </section>
 
+
     <!-- mentorship Ministry -->
-    <section class="page-section pb-5 pt-5 bg-leaves-reverse"  >
+    <section class="page-section pb-5 pt-5"  >
         
         <div class="container px-4 px-lg-5">
 
-            <h1 class="mt-0 h1-add text-center">Mentorship Ministry</h1>
+            <h1 class="mt-0 h1-add text-center">The Great Commision</h1>
             <hr class="divider"/>
-            
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                
-                <div class="col-lg-10 text-center pad">
-
-                    <p class="lg-p">
-                        The Great Commision                       
-                    </p>
-               
-                </div>
-            
-            </div>
 
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 
-                <div class="col-lg-10 text-center pad">
+                <div class="col-lg-10 pad">
 
-                    <p class="mb-4 lg-m">
+                    <p class="lg-p text-blue">
                         The last baptism class held in November 2013 was one of the largest baptism classes 
                         we have had at Open Door. Many of them were new converts who needed guidance and support. 
                         In order to meet this need of constant support and follow up, each baptism candidate was assigned 
                         a mentor from Open Door Believers Chapel–a big brother and a big sister in Christ.                      
                     </p>
+
+                    <p class="lg-p text-blue">
+                        Each big sister and brother is encouraged to check up on their little sister or little brother 
+                        and to encourage them in their growth in their knowledge of Christ. The mentorship program 
+                        is also about developing relationships with one another through devotion, care and encouraging 
+                        each other in our daily walk and transformation. A big sister or brother’s mentorship manifests 
+                        in the way they live—it is evident to others. The experiences they share can lead someone to 
+                        share in the love of grace of Jesus Christ. Being a mentor takes commitment, a passion, 
+                        and an understanding of the Word of God, and it is not an option for believers but a command.                      
+                    </p>
+
+                    <p class="lg-p text-center">
+
+                        <i class="bookmark-fill">
+                            <span class="text-blue">
+                                Matthew 28:18-20 <br/>  
+                                Then Jesus came to them and said, “All authority in heaven and on earth has been given to me. 
+                                Therefore go and make disciples of all nations, baptizing them in the name of the Father and of 
+                                the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And 
+                                surely I am with you always, to the very end of the age.”   
+                            </span>
+                        </i> 
+
+                    </p>
                
                 </div>
             
             </div>
+        </div>
 
-            <div class="row gx-4 gx-lg-5 pt-5 pb-5 justify-content-center">
+    </section>
 
-                <div class="col-lg-6 justify-content-center">
+    <!-- Ministry Photo Gallery-->
+    <section class="page-section bg-leaves pb-6 pt-0"  >
+        
+        <div class="container px-4 px-lg-5">
+
+            <div class="row gx-4 gx-lg-5 pb-5 justify-content-center">
+
+                {% comment %} <div class="col-lg-6 justify-content-center">
                 
                     <!-- Carousel -->
                     <div id="ministries-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -102,39 +120,29 @@
                            
                     </div>
     
-                </div>
-                
-                <div class="col-lg-6 text-center">
+                </div> {% endcomment %}
 
-                    <p class="lg-m">
+                <div class="col-lg-6 text-center pad pb-5 mb-5">
 
-                        Each big sister and brother is encouraged to check up on their little sister or little brother 
-                        and to encourage them in their growth in their knowledge of Christ. The mentorship program 
-                        is also about developing relationships with one another through devotion, care and encouraging 
-                        each other in our daily walk and transformation. A big sister or brother’s mentorship manifests 
-                        in the way they live—it is evident to others. The experiences they share can lead someone to 
-                        share in the love of grace of Jesus Christ. Being a mentor takes commitment, a passion, 
-                        and an understanding of the Word of God, and it is not an option for believers but a command.    
+                    <span class="ministry-image-overlay">
 
-                    </p>
+                        <img class="ministry-img-1 img-thumbnail" src="{%static 'odbc/assets/img/ministries/mentorship/1.jpeg'%}" alt="pic of who we are">
+                        
+                        <img class="ministry-img-2 img-thumbnail" src="{%static 'odbc/assets/img/ministries/mentorship/2.jpeg'%}" alt="pic of who we are">
+                    
+                    </span>
                
                 </div>
-            
-            </div>
 
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                
-                <div class="col-lg-10 text-center pad">
+                <div class="col-lg-6 text-center pad pb-5 mb-5">
 
-                    <p style="color: #dc5834;" class="mb-0 lg-m">
-                        Matthew 28:18-20                   
-                    </p>
+                    <span class="ministry-image-overlay">
 
-                    <p style="color: #dc5834; font-style: italic;" class="mb-0 lg-m">
-                        Then Jesus came to them and said, “All authority in heaven and on earth has been given to me. 
-                        Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of 
-                        the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age.”                      
-                    </p>
+                        <img class="ministry-img-3 img-thumbnail" src="{%static 'odbc/assets/img/ministries/mentorship/3.jpeg'%}" alt="pic of who we are">
+                        
+                        <img class="ministry-img-4 img-thumbnail" src="{%static 'odbc/assets/img/ministries/mentorship/4.jpeg'%}" alt="pic of who we are">
+                   
+                    </span>
                
                 </div>
             
