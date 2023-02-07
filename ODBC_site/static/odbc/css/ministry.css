@@ -155,7 +155,7 @@ h1.larger {
 }
 
 @media (max-width: 991px) {
-  .bg-ministry {
+  .bg-ministry-baptism, .bg-ministry-camp, .bg-ministry-children, .bg-ministry-girls, .bg-ministry-men, .bg-ministry-mentorship, .bg-ministry-women {
     margin-top: 6rem;
   }
 

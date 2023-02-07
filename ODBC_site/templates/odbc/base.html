@@ -51,15 +51,25 @@
         <!-- about page stylesheet -->
         <link href="{%static 'odbc/css/about.css'%}" rel="stylesheet" />
 
-    {% elif style_name == 'announcements' %}
-
-        <!-- announcements/new page stylesheet -->
-        <link href="{%static 'odbc/css/announcements-news.css'%}" rel="stylesheet" />
-
     {% elif style_name == 'ministries' %}
 
         <!-- announcements/new page stylesheet -->
         <link href="{%static 'odbc/css/ministry.css'%}" rel="stylesheet" />
+
+    {% elif style_name == 'latest' %}
+
+        <!-- announcements/new page stylesheet -->
+        <link href="{%static 'odbc/css/latest.css'%}" rel="stylesheet" />
+
+    {% elif style_name == 'watch' %}
+
+        <!-- announcements/new page stylesheet -->
+        <link href="{%static 'odbc/css/watch.css'%}" rel="stylesheet" />
+
+    {% elif style_name == 'contact' %}
+
+        <!-- announcements/new page stylesheet -->
+        <link href="{%static 'odbc/css/contact.css'%}" rel="stylesheet" />
 
     {% endif %}
 
@@ -116,16 +126,16 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
 
                     <ul class="navbar-nav my-2 pt-2 my-lg-0">
-                        <!-- Showing the latest nav option only on the index page (home page) -->
+
                         {% if style_name == 'index' %}
 
-                            <li class="nav-item"><a class="nav-link" href="#thisweek">LATEST</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="{% url 'index' %}">HOME</a></li>
 
                         {% else %}  
 
                             <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">HOME</a></li>
 
-                        {% endif %} 
+                        {% endif %}
 
                         {% if style_name == 'about' %}
 
@@ -140,10 +150,21 @@
                         <!-- Nav dropdown -->
                         <li class="nav-item dropdown">
 
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#portfolio" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            MINISTRIES
+                            {% if style_name == 'ministries' %}
+
+                            <a class="nav-link dropdown-toggle active" id="navbarDropdown" href="#portfolio" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MINISTRIES
                             </a>
 
+
+                            {% else %}  
+
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#portfolio" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    MINISTRIES
+                                </a>
+
+                            {% endif %}
+                            
                             <hr class="hr-nav-line mt-2">
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -160,180 +181,201 @@
 
                         </li>
 
-                        <li class="nav-item"><a class="nav-link" href="">WATCH</a></li>
-                        
-                        <li class="nav-item"><a class="nav-link" href="#contact">CONTACT US</a></li>
+                        {% if style_name == 'watch' %}
 
-                        <!-- Give button -->
+                            <li class="nav-item"><a class="nav-link active" href="{% url 'watch' %}">WATCH</a></li>
+
+                        {% else %}  
+
+                            <li class="nav-item"><a class="nav-link" href="{% url 'watch' %}">WATCH</a></li>
+
+                        {% endif %}
+
+                        {% if style_name == 'latest' %}
+
+                            <li class="nav-item"><a class="nav-link active" href="{% url 'latest' %}">LATEST</a></li>
+
+                        {% else %}  
+
+                            <li class="nav-item"><a class="nav-link" href="{% url 'latest' %}">LATEST</a></li>
+
+                        {% endif %}
+                        
+                        {% if style_name == 'contact' %}
+
+                            <li class="nav-item"><a class="nav-link active" href="{% url 'contact' %}">CONTACT US</a></li>
+
+                        {% else %}  
+
+                            <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">CONTACT US</a></li>
+
+                        {% endif %}
+
+                        {% comment %} <!-- Give button -->
                         <div class="d-lg-none d-xl-none d-xxl-none">
 
                             <a href="">
                                 <button type="button" class="btn btn-primary">GIVE</button>
                             </a>
                             
-                        </div>
+                        </div> {% endcomment %}
 
                     </ul>
 
                 </div>
 
                 <!-- Give button -->
-                <div class="d-none d-lg-block">
+                {% comment %} <div class="d-none d-lg-block">
 
                     <a href="{% url 'index' %}">
                         <button style="font-size: 0.95rem;" type="button" class="btn btn-primary">Give</button>
                     </a>
                     
-                </div>
+                </div> {% endcomment %}
 
             </div>
 
         </nav>
-
-
-        <content class="">
 
             {% block  body_block%}
             <!-- Anything outside this will be inherited by other html files if extented-->
             {% endblock  %}
 
 
-            <!-- Contact us / Upcoming Events/ Links -->
-            <section class="contact-page-section bg-sub-footer text-white px-5 pb-0 pt-5" id="contact">
-                                    
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    
-                    <div class="col-lg-4 text-center pad">
-
-                        <h1 class="mb-4">Upcoming Events</h1>
-
-                        <p class="sm-p">
-
-                            {% if odbc_events%}
-
-                                {% for odbc in odbc_events%}
-                        
-                                    <span class="lg-p">{{ odbc.event_title}}</span>
-
-                                    <br/> 
-
-                                    <span class="sm-p-footer">
-                                        {{ odbc.event_date}} | {{ odbc.event_time}} CST
-                                    </span>
-
-                                    <br/><br/>
-
-                                {% endfor %}
-
-                            {% else %}
-
-                                <p center="sl-p">There are no upcoming events</p>
-
-                            {% endif %}
-
-                        </p>
-               
-                    </div>
-
-                    <div class="col-lg-4 text-center pad">
-
-                        <h1 class="mb-4">Our Weekly Services</h1>
-
-                        <p class="text-white sm-p">
-                        
-                            <span class="lg-p">Community Worship Service</span>
-
-                            <br/> 
-
-                            <span class="sm-p-footer">
-                                Sundays | 10:45 a.m. - 12:30 p.m. CST
-                            </span>
-
-                            <br/><br/>
-
-                            <span class="lg-p">Mid-Week Fellowship</span>
-
-                            <br/> 
-
-                            <span class="sm-p-footer">
-                                Wednesdays | 7:00 p.m. - 8:00 p.m. CST                                
-                                <br>
-                                Meeting ID: 423 574 5002 |
-                                Passcode: 1peter
-                            </span>
-
-                            <br/><br/>
-
-                            <a style="color: #07204F;" class="btn btn-primary btn-xl" target="_blank" href="https://us02web.zoom.us/j/4235745002?pwd=Rmh3UWFPeWxMWkpNQmtkSjlVVFUvQT09">Join Now</a>
+        <!-- Contact us / Upcoming Events/ Links -->
+        <section class="contact-page-section bg-sub-footer text-white px-5 pb-0 pt-5">
+                                
+            <div class="row gx-4 gx-lg-5 justify-content-center">
                 
-                        </p>
-               
-                    </div>
+                <div class="col-lg-4 text-center pad">
 
-                    <div class="col-lg-4 text-center pad">
+                    <h1 class="mb-4">Upcoming Events</h1>
 
-                        <h1 class="mb-4">Like, Share, Follow</h1>
+                    <p class="sm-p">
 
-                        <p class="text-white sm-p">
-                        
-                            <a class="px-1" href="https://www.facebook.com/opendoorbelieverschapel" target="_blank" style="color: #fff; text-decoration: none;"><span><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-vimeo" viewBox="0 0 16 16">
-                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                              </svg></span>
-                            </a>
-    
-                            <a class="px-1" href="https://www.instagram.com/odbcbelize/" target="_blank" style="color: #fff; text-decoration: none;"><span><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                              </svg></span>
-                            </a>
+                        {% if odbc_events%}
 
-                            <a class="px-1" href="https://www.youtube.com/@OpenDoorBelieversChapel" target="_blank" style="color: #fff; text-decoration: none;"><span><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-                              </svg></span>
-                            </a>
+                            {% for odbc in odbc_events%}
+                    
+                                <span class="lg-p">{{ odbc.event_title}}</span>
 
-                            <a class="px-1" href="https://vimeo.com/odbcbelize" target="_blank" style="color: #fff; text-decoration: none;"><span><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-vimeo" viewBox="0 0 16 16">
-                                <path d="M15.992 4.204c-.071 1.556-1.158 3.687-3.262 6.393-2.175 2.829-4.016 4.243-5.522 4.243-.933 0-1.722-.861-2.367-2.583L3.55 7.523C3.07 5.8 2.556 4.94 2.007 4.94c-.118 0-.537.253-1.254.754L0 4.724a209.56 209.56 0 0 0 2.334-2.081c1.054-.91 1.845-1.388 2.373-1.437 1.243-.123 2.01.728 2.298 2.553.31 1.968.526 3.19.646 3.666.36 1.631.756 2.446 1.186 2.445.334 0 .836-.53 1.508-1.587.671-1.058 1.03-1.863 1.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022 3.022 0 0 0-1.185.261c.789-2.573 2.291-3.825 4.508-3.756 1.644.05 2.419 1.117 2.324 3.2z"/>
-                              </svg></span>
-                            </a>
+                                <br/> 
 
-                            <br/><br/>
+                                <span class="sm-p-footer">
+                                    {{ odbc.event_date}} | {{ odbc.event_time}} CST
+                                </span>
 
-                            <span class="lg-p">FOR MORE INFORMATION AND UPDATES, CONTACT US AT</span>
+                                <br/><br/>
 
-                            <br/> 
+                            {% endfor %}
 
-                            <span class="sm-p h1-color-1">
-                                +501 615-8028
-                            </span>
+                        {% else %}
 
-                           
-                        </p>
-               
-                    </div>
+                            <p center="sl-p">There are no upcoming events</p>
 
-                </div>
+                        {% endif %}
 
-            </section>
+                    </p>
             
-
-            <!-- Footer-->
-            <footer class=" py-5  bg-footer justify-content-center mb-0 mt-0 pt-3 pb-3">
-
-                <div class="row gx-4 gx-lg-5">
-
-                    <div class="col-lg-12 text-white text-center sm-p">
-
-                        Copyright © 2023 | Open Door Believers Chapel.All Rights Reserved.
-                        <br/>
-                        Developed by: ODBC. Designed & Hosted by: Techtress Design Studio.
-                    
-                    </div>
-                
                 </div>
 
-            </footer>
+                <div class="col-lg-4 text-center pad">
 
-        </content>
+                    <h1 class="mb-4">Our Weekly Services</h1>
+
+                    <p class="text-white sm-p">
+                    
+                        <span class="lg-p">Community Worship Service</span>
+
+                        <br/> 
+
+                        <span class="sm-p-footer">
+                            Sundays | 10:45 a.m. - 12:30 p.m. CST
+                        </span>
+
+                        <br/><br/>
+
+                        <span class="lg-p">Mid-Week Fellowship</span>
+
+                        <br/> 
+
+                        <span class="sm-p-footer">
+                            Wednesdays | 7:00 p.m. - 8:00 p.m. CST                                
+                            <br>
+                            Meeting ID: 423 574 5002 |
+                            Passcode: 1peter
+                        </span>
+
+                        <br/><br/>
+
+                        <a style="color: #07204F;" class="btn btn-primary btn-xl" target="_blank" href="https://us02web.zoom.us/j/4235745002?pwd=Rmh3UWFPeWxMWkpNQmtkSjlVVFUvQT09">Join Now</a>
+            
+                    </p>
+            
+                </div>
+
+                <div class="col-lg-4 text-center pad">
+
+                    <h1 class="mb-4">Like, Share, Follow</h1>
+
+                    <p class="text-white sm-p">
+                    
+                        <a class="px-1" href="https://www.facebook.com/opendoorbelieverschapel" target="_blank" style="color: #fff; text-decoration: none;"><span><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-vimeo" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg></span>
+                        </a>
+
+                        <a class="px-1" href="https://www.instagram.com/odbcbelize/" target="_blank" style="color: #fff; text-decoration: none;"><span><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                            </svg></span>
+                        </a>
+
+                        <a class="px-1" href="https://www.youtube.com/@OpenDoorBelieversChapel" target="_blank" style="color: #fff; text-decoration: none;"><span><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                            </svg></span>
+                        </a>
+
+                        <a class="px-1" href="https://vimeo.com/odbcbelize" target="_blank" style="color: #fff; text-decoration: none;"><span><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-vimeo" viewBox="0 0 16 16">
+                            <path d="M15.992 4.204c-.071 1.556-1.158 3.687-3.262 6.393-2.175 2.829-4.016 4.243-5.522 4.243-.933 0-1.722-.861-2.367-2.583L3.55 7.523C3.07 5.8 2.556 4.94 2.007 4.94c-.118 0-.537.253-1.254.754L0 4.724a209.56 209.56 0 0 0 2.334-2.081c1.054-.91 1.845-1.388 2.373-1.437 1.243-.123 2.01.728 2.298 2.553.31 1.968.526 3.19.646 3.666.36 1.631.756 2.446 1.186 2.445.334 0 .836-.53 1.508-1.587.671-1.058 1.03-1.863 1.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022 3.022 0 0 0-1.185.261c.789-2.573 2.291-3.825 4.508-3.756 1.644.05 2.419 1.117 2.324 3.2z"/>
+                            </svg></span>
+                        </a>
+
+                        <br/><br/>
+
+                        <span class="lg-p">FOR MORE INFORMATION AND UPDATES, CONTACT US AT</span>
+
+                        <br/> 
+
+                        <span class="sm-p h1-color-1">
+                            +501 615-8028
+                        </span>
+
+                        
+                    </p>
+            
+                </div>
+
+            </div>
+
+        </section>
+        
+
+        <!-- Footer-->
+        <footer class=" py-5  bg-footer justify-content-center mb-0 mt-0 pt-3 pb-3">
+
+            <div class="row gx-4 gx-lg-5">
+
+                <div class="col-lg-12 text-white text-center sm-p">
+
+                    Copyright © 2023 | Open Door Believers Chapel.All Rights Reserved.
+                    <br/>
+                    Developed by: ODBC. Designed & Hosted by: Techtress Design Studio.
+                
+                </div>
+            
+            </div>
+
+        </footer>
     
 
         <!-- Jquery -->

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+{% extends 'odbc/base.html' %}
+
+{% load static %}
+
+{% block body_block %}
+
+    <!-- Masthead -->
+    <section class="page-section bg-watch" id="about">
+            
+        <div class="container px-4 px-lg-5 text-white text-center">
+
+            <span class="about-masthead-space"><br/><br/><br/></span>
+            <h1 class="larger">See whats happening at ODBC</h1>
+
+        </div>
+
+    </section>
+
+
+    <!-- This week at ODBC -->
+    <section class="index-page-section bg-light mt-0 pt-5">
+        
+        <div class="container px-4 px-lg-5">
+
+            <div class="row gx-4 gx-lg-5 pt-5 justify-content-center">
+
+                <div class="col-lg-6 text-center videoWrapper">
+                   
+                    <iframe frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUWhmF4nEnEkra19DIWoZb8g"></iframe>
+               
+                </div>
+
+                <div class="col-lg-6 text-center">
+
+                    <p class="lg-p text-blue">
+
+                        As we gather in-person or watch online, we want to make sure 
+                        you have access to all the information you may need to connect
+                        and learn at Open Doors Believers Chapel. We want to make the 
+                        viewing experience as simple as possible.Every week you can 
+                        check back here for our latest sunday message!
+
+                    </p>
+
+                    <a class="btn btn-warning btn-xl" href="https://www.youtube.com/c/OpenDoorBelieversChapel">Find US ON YOUTUBE</a>
+
+                    <a class="btn btn-info btn-xl" href="https://vimeo.com/odbcbelize">FIND US ON VIMEO</a>
+
+                    <a class="btn btn-light btn-xl" href="https://goo.gl/maps/8s1kQSUY8Tg2Jo2m6">Join Us in person</a>
+               
+                </div>
+            
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- latest messages -->
+    <section class="index-page-section mt-4 pt-5 pb-5">
+        
+        <div class="container px-4 px-lg-5">
+
+            <h1 class="text-dark h1-add text-center text-white"><span class="h1-color-2">Recent Sermons</span></h1>
+            <hr class="divider"/>
+
+            <div class="row gx-4 gx-lg-5 pt-5 justify-content-center">
+
+                <div class="col-lg-4 text-center videoWrapper">
+                   
+                    <iframe frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUWhmF4nEnEkra19DIWoZb8g&index=2"></iframe>
+               
+                </div>
+
+                <div class="col-lg-4 text-center videoWrapper">
+                   
+                    <iframe frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUWhmF4nEnEkra19DIWoZb8g&index=3"></iframe>
+               
+                </div>
+
+                <div class="col-lg-4 text-center videoWrapper">
+                   
+                    <iframe frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUWhmF4nEnEkra19DIWoZb8g&index=4"></iframe>
+               
+                </div>
+
+                <div class="col-lg-10 text-center pad">
+                    
+                    <a style="color: #07204F;" class="btn btn-primary btn-xl" href="https://www.youtube.com/@OpenDoorBelieversChapel">Watch more</a>
+               
+                </div>
+            
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Aniversary Banner -->
+    <section class="index-page-section bg-anniversary pt-5 pb-5">
+
+        <div class="row gx-4 gx-lg-5 mt-0 pt-0 justify-content-center">
+                
+            <div class="col-lg-10 text-center">
+
+                <p class="lg-p-anniversary text-white">
+
+                    CELEBRATING
+
+                </p>
+
+                <h1 class="h1-color-1">25 Years of Service</h1>
+
+                <p class="lg-p-anniversary text-white">
+
+                    September 10th, 2023 marks <br/> <b>25 Years of Service</b> <br/> 
+                    Don't miss out as we celebrate this memorable milestone!
+
+                </p>
+           
+            </div>
+        
+        </div>
+
+    </section>
+
+
+   <!-- blogposts -->
+   <section class="page-section mt-0 pt-3 pb-5 bg-light" id="about">
+        
+    <div class="container px-0 px-lg-0">
+
+        <br/><br/>
+
+        <h1 class="mt-0 h1-add text-center"><span class='h1-color-2'>Blog Posts</span></h1>
+        <hr class="divider"/>
+
+        <div class="ministries-row gx-4 gx-lg-5 pt-3 justify-content-center">
+
+            <div class="card mx-3 my-3" style="width: 18rem;">
+
+                <img src="{% static 'odbc/assets/img/latest/blog_posts/1.jpeg' %}" class="card-img-top" alt="blog post image">
+                
+                <div class="card-body text-blue">
+
+                  <h5 class="card-title h1-color-1">Blog Post Title</h5>
+
+                  <p class="card-text sl-p">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  
+                  <a href="#" class="btn btn-primary" style="color: #07204F;" data-bs-toggle="modal" data-bs-target="#post1">Read More</a>
+
+                </div>
+                
+            </div>
+
+            <div class="card mx-3 my-3" style="width: 18rem;">
+
+                <img src="{% static 'odbc/assets/img/latest/blog_posts/1.jpeg' %}" class="card-img-top" alt="blog post image">
+                
+                <div class="card-body text-blue">
+
+                  <h5 class="card-title h1-color-1">Blog Post Title</h5>
+
+                  <p class="card-text sl-p">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  
+                  <a href="#" class="btn btn-primary" style="color: #07204F;" data-bs-toggle="modal" data-bs-target="#post2">Read More</a>
+
+                </div>
+                
+            </div>
+
+            <div class="card mx-3 my-3" style="width: 18rem;">
+
+                <img src="{% static 'odbc/assets/img/latest/blog_posts/1.jpeg' %}" class="card-img-top" alt="blog post image">
+                
+                <div class="card-body text-blue">
+
+                  <h5 class="card-title h1-color-1">Blog Post Title</h5>
+
+                  <p class="card-text sl-p">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  
+                  <a href="#" class="btn btn-primary" style="color: #07204F;" data-bs-toggle="modal" data-bs-target="#post3">Read More</a>
+
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- Blog post 1 modal -->
+    <div class="modal fade" id="post1">
+
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Blog Post Heading</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <h3>Blog post body</h3>
+
+                    <p>
+                        Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Blog post 2 modal -->
+    <div class="modal fade" id="post2">
+
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Blog Post Heading</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <h3>Blog post body</h3>
+
+                    <p>
+                        Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Blog post 3 modal -->
+    <div class="modal fade" id="post3">
+
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Blog Post Heading</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <h3>Blog post body</h3>
+
+                    <p>
+                        Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+{% endblock  %}

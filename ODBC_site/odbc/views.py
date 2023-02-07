@@ -22,6 +22,30 @@ def about(request):
     return render(request, 'odbc/about.html', {'style_name' : style_name})
 
 
+# latest page
+def latest(request):
+
+    style_name = 'latest'
+    
+    return render(request, 'odbc/latest.html', {'style_name' : style_name})
+
+
+# watch page
+def watch(request):
+
+    style_name = 'watch'
+    
+    return render(request, 'odbc/watch.html', {'style_name' : style_name})
+
+# contact page
+def contact(request):
+
+    style_name = 'contact'
+    
+    return render(request, 'odbc/contact.html', {'style_name' : style_name})
+
+
+# MINISTRIES
 # baptism ministry page
 def baptism(request):
 

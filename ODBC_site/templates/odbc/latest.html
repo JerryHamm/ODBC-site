@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+{% extends 'odbc/base.html' %}
+
+{% load static %}
+
+{% block body_block %}
+
+    <!-- Masthead -->
+    <section class="page-section bg-latest" id="about">
+            
+        <div class="container px-4 px-lg-5 text-white text-center">
+
+            <span class="about-masthead-space"><br/><br/><br/></span>
+            <h1 class="larger">This week at ODBC</h1>
+
+        </div>
+
+    </section>
+
+
+    <!-- This week at ODBC -->
+    <section class="index-page-section bg-light mt-0 pt-5">
+        
+        <div class="container px-4 px-lg-5">
+
+            <div class="row gx-4 gx-lg-5 pt-5 justify-content-center">
+
+                <div class="col-lg-6 text-center videoWrapper">
+                   
+                    <iframe frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUWhmF4nEnEkra19DIWoZb8g"></iframe>
+               
+                </div>
+
+                <div class="col-lg-6 text-center">
+
+                    <p class="lg-p text-blue">
+
+                        As we gather in-person or watch online, we want to make sure 
+                        you have access to all the information you may need to connect
+                        and learn at Open Doors Believers Chapel. We want to make the 
+                        viewing experience as simple as possible.Every week you can 
+                        check back here for our latest sunday message!
+
+                    </p>
+
+                    <a class="btn btn-warning btn-xl" href="https://www.youtube.com/c/OpenDoorBelieversChapel">Find US ON YOUTUBE</a>
+
+                    <a class="btn btn-info btn-xl" href="https://vimeo.com/odbcbelize">FIND US ON VIMEO</a>
+
+                    <a class="btn btn-light btn-xl" href="https://goo.gl/maps/8s1kQSUY8Tg2Jo2m6">Join Us in person</a>
+               
+                </div>
+            
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- latest messages -->
+    <section class="index-page-section mt-4 pt-5 pb-5">
+        
+        <div class="container px-4 px-lg-5">
+
+            <h1 class="text-dark h1-add text-center text-white"><span class="h1-color-2">Recent Sermons</span></h1>
+            <hr class="divider"/>
+
+            <div class="row gx-4 gx-lg-5 pt-5 justify-content-center">
+
+                <div class="col-lg-4 text-center videoWrapper">
+                   
+                    <iframe frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUWhmF4nEnEkra19DIWoZb8g&index=2"></iframe>
+               
+                </div>
+
+                <div class="col-lg-4 text-center videoWrapper">
+                   
+                    <iframe frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUWhmF4nEnEkra19DIWoZb8g&index=3"></iframe>
+               
+                </div>
+
+                <div class="col-lg-4 text-center videoWrapper">
+                   
+                    <iframe frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUWhmF4nEnEkra19DIWoZb8g&index=4"></iframe>
+               
+                </div>
+
+                <div class="col-lg-10 text-center pad">
+                    
+                    <a style="color: #07204F;" class="btn btn-primary btn-xl" href="https://www.youtube.com/@OpenDoorBelieversChapel">Watch more</a>
+               
+                </div>
+            
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Aniversary Banner -->
+    <section class="index-page-section bg-anniversary pt-5 pb-5">
+
+        <div class="row gx-4 gx-lg-5 mt-0 pt-0 justify-content-center">
+                
+            <div class="col-lg-10 text-center">
+
+                <p class="lg-p-anniversary text-white">
+
+                    CELEBRATING
+
+                </p>
+
+                <h1 class="h1-color-1">25 Years of Service</h1>
+
+                <p class="lg-p-anniversary text-white">
+
+                    September 10th, 2023 marks <br/> <b>25 Years of Service</b> <br/> 
+                    Don't miss out as we celebrate this memorable milestone!
+
+                </p>
+           
+            </div>
+        
+        </div>
+
+    </section>
+
+
+   <!-- blogposts -->
+   <section class="page-section mt-0 pt-3 pb-5 bg-light" id="about">
+        
+    <div class="container px-0 px-lg-0">
+
+        <br/><br/>
+
+        <h1 class="mt-0 h1-add text-center"><span class='h1-color-2'>Blog Posts</span></h1>
+        <hr class="divider"/>
+
+        <div class="ministries-row gx-4 gx-lg-5 pt-3 justify-content-center">
+
+            <div class="card mx-3 my-3" style="width: 18rem;">
+
+                <img src="{% static 'odbc/assets/img/latest/blog_posts/default.png' %}" class="card-img-top" alt="blog post image">
+                
+                <div class="card-body text-blue">
+
+                    <h5 class="card-title h1-color-1">My Summer Camp Experience</h5>
+
+                    <p class="card-text sl-p">
+                        Well this was my first time attending a camp and O.D.B.C camp 
+                        really made a great impression... 
+                    </p>
+
+                    <a href="#" class="btn btn-primary" style="color: #07204F;" data-bs-toggle="modal" data-bs-target="#post1">Read More</a>
+
+                </div>
+                
+            </div>
+
+            <div class="card mx-3 my-3" style="width: 18rem;">
+
+                <img src="{% static 'odbc/assets/img/latest/blog_posts/default.png' %}" class="card-img-top" alt="blog post image">
+                
+                <div class="card-body text-blue">
+
+                  <h5 class="card-title h1-color-1">Dion & Alison Gutierrez’s Fostering Experience</h5>
+
+                  <p class="card-text sl-p">Fostering has always been something both Dion and I were interested in doing...</p>
+                  
+                  <a href="#" class="btn btn-primary" style="color: #07204F;" data-bs-toggle="modal" data-bs-target="#post2">Read More</a>
+
+                </div>
+                
+            </div>
+
+            <div class="card mx-3 my-3" style="width: 18rem;">
+
+                <img src="{% static 'odbc/assets/img/latest/blog_posts/3.jpeg' %}" class="card-img-top" alt="blog post image">
+                
+                <div class="card-body text-blue">
+
+                  <h5 class="card-title h1-color-1">Camp Site Found!</h5>
+
+                  <p class="card-text sl-p">Our prayers have been answered! After 19 years of desiring and actually seeking to purchase land...</p>
+                  
+                  <a href="#" class="btn btn-primary" style="color: #07204F;" data-bs-toggle="modal" data-bs-target="#post3">Read More</a>
+
+                </div>
+                
+            </div>
+
+            <div class="card mx-3 my-3" style="width: 18rem;">
+
+                <img src="{% static 'odbc/assets/img/latest/blog_posts/4.jpeg' %}" class="card-img-top" alt="blog post image">
+                
+                <div class="card-body text-blue">
+
+                  <h5 class="card-title h1-color-1">Jesus Is My Super Hero</h5>
+
+                  <p class="card-text sl-p">To God be the glory great things He has indeed done. Seven years ago, in an interview...</p>
+                  
+                  <a href="#" class="btn btn-primary" style="color: #07204F;" data-bs-toggle="modal" data-bs-target="#post4">Read More</a>
+
+                </div>
+                
+            </div>
+
+            <div class="card mx-3 my-3" style="width: 18rem;">
+
+                <img src="{% static 'odbc/assets/img/latest/blog_posts/5.jpeg' %}" class="card-img-top" alt="blog post image">
+                
+                <div class="card-body text-blue">
+
+                  <h5 class="card-title h1-color-1">What Belize means to me</h5>
+
+                  <p class="card-text sl-p">I am a firm believer that a change of pace + change of place = change of perspective...</p>
+                  
+                  <a href="#" class="btn btn-primary" style="color: #07204F;" data-bs-toggle="modal" data-bs-target="#post5">Read More</a>
+
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- Blog post 1 modal -->
+    <div class="modal fade" id="post1">
+
+        <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title text-blue">My Summer Camp Experience</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body text-blue">
+
+                    <p class="sl-p h1-color-1">Posted on October 11th , 2017</p>
+
+                    <p class="lg-m">
+                        Hi! My name is Sherilyn Martinez
+
+                        Well this was my first time attending a camp and O.D.B.C camp really made a 
+                        great impression. I can honestly say I enjoyed myself. As I have confessed at 
+                        camp I didn’t want to go; I thought camp was going to be boring and listening 
+                        to the rules made it worse I refused but Mrs. Nicole caught me off guard in Bible 
+                        Society and made me change my mind. Arriving there Sunday evening was nice; the 
+                        place was very quiet and beautiful. I saw so many strange faces cause I only knew 
+                        about six people adults and I said I wouldn’t have become friends with anyone but
+                         as Monday evening approach from the obstacle race I met my first friend Maurice 
+                         Savery, it was also his first time at camp so what a great way to start a friendship 
+                         and as the rest of the days went by I got to talk to the other campers which was 
+                         really nice they made me feel welcome. Then there was the never ending activities 
+                         which was really great but energy taking. I was really exhausted for that week. 
+                         I got to be 11pmand weak up 7am. I was not use to that but I adapt. Not only that 
+                         but the delicious food, I kept full the whole week! I ate breakfast around 8am, 
+                         my food haven’t completely digest good and you hear the bell for lunch then you 
+                         it for supper. Besides all those, I also got the spiritual part which was spectacular. 
+                         I remember sitting under chapel a night and the guest speaker asked who wanted to 
+                         give their life to Jesus and I was asking kind of shy to get up but I believe 
+                         Maurice read my mind because he told me “Let’s Go” then Mrs. Nicole prayed with 
+                         us and I felt more happy than ever. I used to go to my primary school church but 
+                         after a while I stopped because I lost interest of going there to sit for hours 
+                         and fall asleep in the chair, so I stayed home and pray as usual but going to O.D.B.C 
+                         camp has changed my life. I even talk about how hype and amazing the church is in 
+                         Ethics class. I wish camp was for two weeks! Right now I’m just anxiously waiting 
+                         on Mew Years camp and summer camp. I really enjoyed it. BEST EXPERIENCE of my life. 
+                         Thanks so much to everyone especially Mrs. Nicole.
+
+                    </p>
+                
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Blog post 2 modal -->
+    <div class="modal fade" id="post2">
+
+        <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title text-blue">Dion & Alison Gutierrez’s Fostering Experience</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body text-blue">
+
+                    <p class="sl-p h1-color-1">Posted on October 10th , 2017  </p>
+
+                    <p class="lg-m">
+                        Hi! My name is Sherilyn Martinez
+
+                        Fostering has always been something both Dion and I were interested in doing. So when we were 
+                        presented with the opportunity to foster some kids for the Christmas holiday we were thrilled 
+                        to open our home to them.
+                        The experience was nothing like I expected. In a good way! The kids were a little 
+                        shy at first but after a few days they seemed very comfortable and for me it felt
+                        like having family visiting. We enjoyed hearing them play and giggle and having 
+                        fun like kids their ago do.
+                        A little over a month after that experience we got the opportunity to care for 
+                        an even younger child, an 11 month old as changing as it was; we found it rewarding.
+                         We watched him pass through precious milestones in his life. We all got very attached 
+                         to him and he became a part of our family. When it was time for him to return to his
+                          family 5 months after: we were sad to see him leave but happy to know that he’s 
+                          returning to his parents who love him too.
+                        All in all the experience was wonderful and rewarding. We truly believe this was and is 
+                        God’s leading in our lives and our home remain open for whenever He’s ready to use us again.
+
+
+                    </p>
+                
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Blog post 3 modal -->
+    <div class="modal fade" id="post3">
+
+        <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title text-blue">Camp Site Found!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body text-blue">
+
+                    <p class="sl-p h1-color-1">Posted on September 14th , 2017</p>
+
+                    <p class="lg-m">
+                        Our prayers have been answered! After 19 years of desiring and actually seeking to purchase land, A Camp Site has been FOUND! We have located 25 acres of land for our campsite in the Sandhill area.
+                        Camping is the life line of ODBC and it has reached, touched and nourished spiritual lives of many in our assembly and country. The vision for ODBC has its roots in the Camp Ministry and we would like to carry it on for many more generations to come with your help.
+                        Now is the time for ODBC SAINTS past and present to have a major impact in our ministry by giving to this endeavor to make the campsite a reality. Love gifts would be greatly appreciated.
+                    </p>
+                
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Blog post 4 modal -->
+    <div class="modal fade" id="post4">
+
+        <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title text-blue">Jesus Is My Super Hero (Serving in Belize) — Altino Facey</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body text-blue">
+
+                    <p class="sl-p h1-color-1">Posted on September 13th , 2017 </p>
+
+                    <p class="lg-m">
+                        To God be the glory great things He has indeed done. Seven years ago, in an interview for my current job I was asked the question: where do I see myself five years from now? My answers then surprising as I reflect on it was serving the Lord and going on mission all over the world. My interviewers laughed and told my they would be in touch. Seven years later the Lord as indeed provided me with the opportunity to serve in Belize.
+                        On this my second visit to Belize, I was again opportunity to serve with other Christians. This has helped me grow and learn more about Christ as we worked together during the VBS. From being a superhero to a being a story teller to an actor the opportunities were provided to work with others as we used our gifts and abilities to teach each other more about Christ while sharing with our communities.  The fellowship provided while serving was a blessing to sit, eat and talk and strengthen each other each day.
+                        Serving has open my eyes to the different groups in Belize and the different methods that can be used to share the gospel. Each community has a unique structure but the reception to the gospel is the same. Persons are accepting Jesus as their Lord and saviour.  From serving as Captain Tino to Doctor Tino I’ve learned that children are excited about hearing about the Lord in this time. Though tiring after each session, it brings Joy to know that children are learning about the Lord Jesus. From Corozal to George Town to Maya -Mopan and Belize city there is a Joy that follows when being obedient to the command the instructs us to go.
+                        I’ve seeing the power of prayer while serving in Belize. As I took sick in the night I could rest assured that God would heal me to go out the very next day. And in fact, He did. Right through the summer as we served whatever challenges came our way once we prayed God answered our prayer. From increasing the refreshments to providing party pack. The Lord answered prayers.
+                        Finally serving as a counsellor at the OBDC camp gave me the opportunity to interact on one and one bases with the older teenage boys at the camp.  Throughout the week as we shared from the word and our lives experiences we saw should apply the word of God in our everyday lives to become more like Jesus.  Thanks again for the opportunity to serve.
+                    </p>
+                
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Blog post 5 modal -->
+    <div class="modal fade" id="post5">
+
+        <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title text-blue">What Belize means to me — Ryan Foust</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body text-blue">
+
+                    <p class="sl-p h1-color-1">Posted on September 12th , 2017  </p>
+
+                    <p class="lg-m">
+                        I am a firm believer that a change of pace + change of place = change of perspective.  Our mission trips to Belize City, partnering with ODBC, have far exceeded the mere change of perspective as we have formed deep relationships, and a valuable partnership.
+                        Each time we go to Belize, our group experiences a deeper connection with the people of ODBC.  Often times, strangers are treated differently when they first come to church.  However, at ODBC, we feel like family.  We are welcomed with open and loving arms, talked to, encouraged, prayed for, and truly built up in the Lord.  We may come from a different place-a very cold place in the winter- but we serve the same God and are forgiven by the same Savior which unites us together in ministry.  Many of our relationships go far beyond just our visits but extends through prayers and conversations that we have with many of you even when we are not in Belize.  In fact, we had a wonderful opportunity to show Nomar and his family a little about Iowa this past summer.
+                        Through our trips, we have been able to accomplish many different work projects.  This is a way we feel we can be a blessing to others however for us it’s the projects that pave a way for relationships to flourish.  We understand that paint fades, winds blow, and our project may not last but relationships that are built can last through any storm.   One of the interesting aspects of our trips is the bonds that form within our group as we go and work side by side with one another.  We all have different abilities and skill levels but all contribute in our own ways and all are part of the Church.
+                        After working with ODBC four times, the blessings from the trips are abundant and often times indescribable.  We have seen God work in amazing ways; we have been completely crushed and forced to rely on God to lift us up.  Through it all, as much as I hope we are a blessing in spreading God’s love through relationships, projects, devotions, conversations, etc, I know God has truly blessed us for obediently serving and spreading  His love.
+                    </p>
+                
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+{% endblock  %}

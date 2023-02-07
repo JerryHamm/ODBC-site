@@ -1,0 +1,45 @@
+.bg-contact {
+  background-image: 
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(7, 32, 79, 0.545), 
+      rgba(7, 32, 79, 0.448)
+    ),
+    linear-gradient(
+      /* rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45) */
+      rgba(7, 32, 79, 0.848), 
+      rgba(7, 32, 79, 0.696)
+    ),
+    url(../assets/img/about/bg-masthead.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1.larger {
+  font-size: 5rem;
+}
+
+@media (max-width: 991px) {
+  .bg-contact {
+    margin-top: 6rem;
+  }
+
+  .about-masthead-space {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  h1.larger {
+    font-size: 2.5rem;
+  }
+
+}
+
+#about {
+  border-bottom: 10px solid #eca405;
+}
