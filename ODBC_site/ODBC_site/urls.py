@@ -21,16 +21,16 @@ from django.conf.urls.static import static
 from django.views.generic import TemplateView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
-    path('about/', views.about, name='about'),
-    path('baptism-ministry/', views.baptism, name='baptism'),
-    path('childrens-ministry/', views.children, name='children'),
-    path('mens-ministry/', views.mens, name='mens'),
-    path('mentorship-ministry/', views.mentorship, name='mentorship'),
-    path('womens-ministry/', views.women, name='womens'),
-    path('girls-ministry/', views.girls, name='girls'),
-     path('camp-ministry/', views.camp, name='camp'),
+    # path('admin/', admin.site.urls),
+    # path('', views.index, name='index'),
+    # path('about/', views.about, name='about'),
+    # path('baptism-ministry/', views.baptism, name='baptism'),
+    # path('childrens-ministry/', views.children, name='children'),
+    # path('mens-ministry/', views.mens, name='mens'),
+    # path('mentorship-ministry/', views.mentorship, name='mentorship'),
+    # path('womens-ministry/', views.women, name='womens'),
+    # path('girls-ministry/', views.girls, name='girls'),
+    #  path('camp-ministry/', views.camp, name='camp'),
     
     path('odbc-admin/', views.odbc_admin, name='odbc-admin'),
     path('odbc-admin-create/', views.odbc_admin_create, name='odbc-admin-create'),
