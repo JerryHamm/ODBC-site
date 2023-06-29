@@ -31,7 +31,8 @@ urlpatterns = [
     path('womens-ministry/', views.women, name='womens'),
     path('girls-ministry/', views.girls, name='girls'),
      path('camp-ministry/', views.camp, name='camp'),
-    
+    path('watch/', views.watch, name='watch'),
+
     path('odbc-admin/', views.odbc_admin, name='odbc-admin'),
     path('odbc-admin-create/', views.odbc_admin_create, name='odbc-admin-create'),
     path('odbc-admin-update/<int:id>/', views.odbc_admin_update, name='odbc-admin-update'),

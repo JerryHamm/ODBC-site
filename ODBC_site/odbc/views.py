@@ -62,7 +62,7 @@ def women(request):
     return render(request, 'odbc/ministries/womens-ministry.html', {'style_name' : style_name})
 
 
-# girl's clup page
+# girl's club page
 def girls(request):
 
     style_name = 'ministries'
@@ -77,6 +77,12 @@ def camp(request):
     
     return render(request, 'odbc/ministries/camp-ministry.html', {'style_name' : style_name})
 
+#Watch webpage
+def watch(request):
+
+    style_name = 'Watch'
+
+    return render(request, 'odbc/video.html', {'style_name': style_name})
 
 # admin dashboard
 def odbc_admin(request):
